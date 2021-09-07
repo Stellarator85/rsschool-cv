@@ -1,1 +1,1 @@
-https://stellarator85.github.io/rsschool-cv/
+https://stellarator85.github.io/rsschool-cv/cv
