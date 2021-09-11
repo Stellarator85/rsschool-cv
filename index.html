@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tymur Shcherbyna Curriculum Vitae</title>
+    <title>CV</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
@@ -26,7 +26,7 @@
             <p class="about-me-text">
               Full Stack Developer Wannabe & IT-Switcher.<br />
               I am 36 years old.<br />
-              No wife, no kids - got plenty of time to study programming
+              Got plenty of time to study programming
               languages, libraries, frameworks, and other necessary
               IT-technologies.<br />
               Fluent English speaker & writer since I resided and worked in an
@@ -51,7 +51,6 @@
               March 2009 - December 2013
               <span class="My-Work-Experience-devider">|</span> OH, USA
             </p>
-
             <ul class="My-Work-Experience-duties">
               <li class="My-Work-Experience-duties-item">
                 Meet & greet customers.
@@ -65,7 +64,6 @@
               </li>
             </ul>
           </div>
-
           <!--Company#2-->
           <div class="My-Work-Experience-company">
             <h4 class="My-Work-Experience-position">
@@ -120,7 +118,7 @@
         <!--"Location"-section-->
         <div class="Contacts-section">
           <h3 class="Location-Title">Location</h3>
-          <div>
+          <div class="Location-section">
             <span class="Contact-Type">City: </span
             ><span class="Soft-Skills-item">Cherkasy</span>
             <a href="tel:+380688037148" class="Contact-Content"></a>
@@ -157,7 +155,7 @@
           </div>
           <div>
             <span class="Contact-Type">Discord Username:</span>
-            <span class="Contact-Content">Stellarator85</span>
+            <span class="Contact-Content">Stellarator85#0399</span>
           </div>
         </div>
 
@@ -182,7 +180,7 @@
             </li>
             <li class="Tech-Skills-content">
               <span class="Tech-Skills-item"
-                >JavaScript...............Pre-junior level</span
+                >JavaScript...............Junior level</span
               >
             </li>
             <li class="Tech-Skills-content">
@@ -192,16 +190,496 @@
             </li>
             <li class="Tech-Skills-content">
               <span class="Tech-Skills-item"
-                >Node.js......................Pre-junior level</span
+                >Node.js......................Junior level</span
               >
             </li>
           </ul>
-        </div>
+          <details><summary><span class="Code-Example-Title">JS-Code example</span></summary><pre class="Code-Text">
+/* Project: Designing a custom videoplayer.
 
+Result you can find @ shorturl.at/fiuAT */
+
+/* Именование html/css-элементов */
+
+const video = document.getElementById("video1");
+
+сonst videoPlaySymbol = document.getElementById
+("Video-play-symbol");
+
+const playButton = document.getElementsByClassName
+("Video-controls-panel-play-button")[0];
+
+const volumeButton = document.getElementsByClassName
+("Video-player-controls-button-volume")[0];
+
+const progress = document.getElementById("progress");
+
+const progres = document.getElementById("progres");
+
+/* Убрать звук при нажатии клавиши "M" или при клике
+на кнопку "Звук". */
+
+document.addEventListener("keydown",function(event) {
+if (
+event.code === "KeyM" &&
+ volumeButton.classList.contains
+ ("Video-player-controls-button-volume")
+)
+return (
+(video.muted = true) +
+ volumeButton.classList.remove
+ ("Video-player-controls-button-volume") +
+volumeButton.classList.add
+("Video-player-controls-button-volume-muted")
+  );
+  else if (
+    event.code === "KeyM" &&
+    volumeButton.classList.contains
+    ("Video-player-controls-button-volume-muted")
+  )
+    return (
+      (video.muted = false) +
+      volumeButton.classList.remove(
+      "Video-player-controls-button-volume-muted"
+      ) +
+      volumeButton.classList.add
+      ("Video-player-controls-button-volume")
+    );
+});
+
+volumeButton.addEventListener("click",function(event) {
+  if (
+    event.which === 1 &&
+    volumeButton.classList.contains
+    ("Video-player-controls-button-volume")
+  )
+    return (
+      (video.muted = true) +
+      volumeButton.classList.remove
+      ("Video-player-controls-button-volume") +
+      volumeButton.classList.add
+      ("Video-player-controls-button-volume-muted")
+    );
+  else if (
+    event.which === 1 &&
+    volumeButton.classList.contains
+    ("Video-player-controls-button-volume-muted")
+  )
+    return (
+      (video.muted = false) +
+      volumeButton.classList.remove(
+        "Video-player-controls-button-volume-muted"
+      ) +
+      volumeButton.classList.add
+      ("Video-player-controls-button-volume")
+    );
+});
+
+/* Ускорение/замедление проигрывания видео 
+при нажатии клавиш "<" или ">". */
+
+document.addEventListener("keydown", function(event){
+  if (event.code === "ArrowLeft" 
+  && video.playbackRate === 1.0)
+    return (video.playbackRate = 0.25);
+  else if (event.code === "ArrowLeft" 
+  && video.playbackRate === 0.25)
+    return (video.playbackRate = 1.0);
+});
+
+document.addEventListener("keydown", function(event){
+  if (event.code === "ArrowRight"
+  && video.playbackRate === 1.0)
+    return (video.playbackRate = 3.0);
+  else if (event.code === "ArrowRight" 
+  && video.playbackRate === 3.0)
+    return (video.playbackRate = 1.0);
+});
+
+/* Изменение цвета шкалы прогресса видео 
+при манипуляции с ползунком. */
+
+progress.addEventListener("input",function(){
+  progress.style.background = 
+`linear-gradient(to right, #82CFD0 0%,
+#82CFD0 ${progress.value}%, 
+  #fff ${progress.value}%, white 100%)`;
+});
+
+function getProgre() {
+  progress.max = video.duration;
+  progress.value = video.currentTime;
+  setTimeout(getProgre, 0);
+}
+getProgre();
+
+/* Шкала регулировки громкости.*/
+
+progres.addEventListener("input",function(){
+let theValue = this.value;
+video.volume = progres.value / 100;
+this.style.background = `linear-gradient
+(to right, #82CFD0 0%, 
+#82CFD0 ${theValue}%, #fff ${theValue}%, white 100%)`;
+if (progres.value === progres.min)
+return (
+  volumeButton.classList.remove
+  ("Video-player-controls-button-volume") +
+  volumeButton.classList.add
+  ("Video-player-controls-button-volume-muted")
+    );
+  else
+    return (
+      volumeButton.classList.remove(
+        "Video-player-controls-button-volume-muted"
+      ) + volumeButton.classList.add
+      ("Video-player-controls-button-volume")
+    );
+});
+
+/* Переход/Выход в/из режим "Полный экран". */
+
+document.addEventListener("keydown",function(event){
+if (document.fullscreenElement === video
+&& event.code === "KeyF")
+return document.exitFullscreen();
+else if (event.code === "KeyF")
+return video.requestFullscreen({navigationUI:"hide"});
+});
+
+/* Проигрывание после нажатия кнопки "Play" 
+на панели управления.*/
+
+playButton.addEventListener("click",function(event){
+if (
+event.which === 1 &&
+videoPlaySymbol.classList.contains("Video-play-symbol")
+)
+return (
+video.play() +
+playButton.classList.remove
+("Video-controls-panel-play-button")+
+playButton.classList.add
+("Video-controls-panel-pause-button")+
+videoPlaySymbol.classList.remove
+("Video-play-symbol")+
+videoPlaySymbol.classList.add
+("Video-play-symbol-fade")
+);
+else if (
+event.which === 1 &&
+videoPlaySymbol.classList.contains
+("Video-play-symbol-fade")
+  )
+  return (
+  video.pause() +
+playButton.classList.remove
+("Video-controls-panel-pause-button")+
+playButton.classList.add
+("Video-controls-panel-play-button")+
+videoPlaySymbol.classList.remove
+("Video-play-symbol-fade")+
+videoPlaySymbol.classList.add
+("Video-play-symbol")
+    );
+});
+
+/* Переход в полноэкранный режим после 
+нажатия кнопки "Full Screen" на панели управления.*/
+
+document
+.getElementsByClassName
+("Video-controls-panel-button")[2]
+.addEventListener("click", function (e) {
+if (e.which === 1) 
+return video.requestFullscreen({navigationUI:"hide"});
+  });
+
+/* Воспроизведение видео после нажатия 
+символа Play на дисплее. */
+
+videoPlaySymbol.addEventListener
+("click",function(event){
+  if (
+    event.which === 1 &&
+    videoPlaySymbol.classList.contains
+    ("Video-play-symbol")
+  )
+return (
+video.play() +
+playButton.classList.remove
+("Video-controls-panel-play-button")+
+playButton.classList.add
+("Video-controls-panel-pause-button")+
+videoPlaySymbol.classList.remove
+("Video-play-symbol")+
+videoPlaySymbol.classList.add
+("Video-play-symbol-fade")
+    );
+  else if (
+    event.which === 1 &&
+    videoPlaySymbol.classList.contains
+    ("Video-play-symbol-fade")
+  )
+return (
+video.pause() +
+videoPlaySymbol.classList.add
+("Video-play-symbol")+
+videoPlaySymbol.classList.remove
+("Video-play-symbol-fade")+
+playButton.classList.remove
+("Video-controls-panel-pause-button")+
+playButton.classList.add
+("Video-controls-panel-play-button")
+    );
+});
+
+/* Воспроизведение/пауза видео
+после клика на дисплей. */
+
+video.addEventListener("click",function(event){
+if (
+event.which === 1 &&
+videoPlaySymbol.classList.contains
+("Video-play-symbol")
+  )
+return (
+video.play() +
+videoPlaySymbol.classList.add
+("Video-play-symbol-fade")+
+videoPlaySymbol.classList.remove
+("Video-play-symbol")+
+playButton.classList.add
+("Video-controls-panel-pause-button")+
+playButton.classList.remove
+("Video-controls-panel-play-button")
+    );
+  else if (
+    event.which === 1 &&
+    videoPlaySymbol.classList.contains
+    ("Video-play-symbol-fade")
+  )
+return (
+video.pause() +
+videoPlaySymbol.classList.add
+("Video-play-symbol")+
+videoPlaySymbol.classList.remove
+("Video-play-symbol-fade")+
+playButton.classList.remove
+("Video-controls-panel-pause-button")+
+playButton.classList.add
+("Video-controls-panel-play-button")
+    );
+});
+
+/* Воспроизведение/пауза видео 
+при нажатии пробела. */
+
+document.addEventListener("keyup",function(event) {
+if (event.code==="Space"&&video.paused===true)
+return (
+video.play() +
+video.removeAttribute("poster")+
+playButton.classList.remove
+("Video-controls-panel-play-button")+
+playButton.classList.add
+("Video-controls-panel-pause-button")+
+videoPlaySymbol.classList.remove
+("Video-play-symbol") +
+videoPlaySymbol.classList.add
+("Video-play-symbol-fade")
+    );
+else if (event.code==="Space"&&video.paused===false)
+    return (
+video.pause() +
+video.setAttribute
+("poster", "assets/video/poster.jpg")+
+playButton.classList.remove
+("Video-controls-panel-pause-button")+
+playButton.classList.add
+("Video-controls-panel-play-button")+
+videoPlaySymbol.classList.remove
+("Video-play-symbol-fade")+
+videoPlaySymbol.classList.add
+("Video-play-symbol")
+    );
+});
+
+/* Изменение проирываемого видео-файла. 
+при клике кнопок Назад/Вперед. */
+
+document
+.getElementsByClassName
+("Video-controls-panel-button")[0]
+.addEventListener("click",function(e){
+if
+(e.which===1
+&&video.getAttribute("src")
+==="assets/video/video.mp4")
+return (
+video.pause +
+playButton.classList.remove
+("Video-controls-panel-pause-button")+
+playButton.classList.add(
+  "Video-controls-panel-play-button")+
+videoPlaySymbol.classList.remove
+("Video-play-symbol-fade")+
+videoPlaySymbol.classList.add
+("Video-play-symbol")+
+video.removeAttribute
+("src", "assets/video/video.mp4")+
+video.removeAttribute
+("poster", "assets/video/poster.jpg")+
+video.setAttribute
+("src", "assets/video/video2.mp4")+
+video.setAttribute
+("poster", "assets/video/poster2.jpg")
+);
+if (
+e.which === 1 &&
+video.getAttribute("src")==="assets/video/video2.mp4"
+ )
+  return (
+video.pause +
+playButton.classList.remove
+("Video-controls-panel-pause-button")+
+playButton.classList.add
+("Video-controls-panel-play-button")+
+videoPlaySymbol.classList.remove
+("Video-play-symbol-fade")+
+videoPlaySymbol.classList.add
+("Video-play-symbol") +
+video.removeAttribute
+("src", "assets/video/video2.mp4") +
+video.removeAttribute
+("poster", "assets/video/poster2.jpg")+
+video.setAttribute
+("src", "assets/video/video4.mp4") +
+video.setAttribute
+("poster", "assets/video/poster4.png")
+      );
+else if (
+ e.which === 1 &&
+video.getAttribute("src")==="assets/video/video4.mp4"
+    )
+      return (
+video.pause +
+playButton.classList.remove
+("Video-controls-panel-pause-button") +
+playButton.classList.add
+("Video-controls-panel-play-button") +
+videoPlaySymbol.classList.remove
+("Video-play-symbol-fade") +
+videoPlaySymbol.classList.add
+("Video-play-symbol") +
+video.removeAttribute
+("src", "assets/video/video4.mp4") +
+video.removeAttribute
+("poster", "assets/video/poster4.png") +
+video.setAttribute
+("src", "assets/video/video.mp4") +
+video.setAttribute
+("poster", "assets/video/poster.jpg")
+      );
+  });
+
+document
+.getElementsByClassName
+("Video-controls-panel-button")[1]
+.addEventListener("click", function (e) {
+if
+(e.which===1 &&
+video.getAttribute("src")===
+"assets/video/video.mp4")
+return (
+video.pause +
+playButton.classList.remove
+("Video-controls-panel-pause-button")+
+playButton.classList.add
+("Video-controls-panel-play-button")+
+videoPlaySymbol.classList.remove
+("Video-play-symbol-fade")+
+videoPlaySymbol.classList.add
+("Video-play-symbol")+
+video.removeAttribute
+("src", "assets/video/video.mp4")+
+video.removeAttribute
+("poster", "assets/video/poster.jpg")+
+video.setAttribute
+("src", "assets/video/video4.mp4")+
+video.setAttribute
+("poster", "assets/video/poster4.png")
+      );
+if (
+e.which === 1 &&
+video.getAttribute("src")===
+"assets/video/video4.mp4"
+    )
+      return (
+video.pause +
+playButton.classList.remove
+("Video-controls-panel-pause-button")+
+playButton.classList.add
+("Video-controls-panel-play-button")+
+videoPlaySymbol.classList.remove
+("Video-play-symbol-fade")+
+videoPlaySymbol.classList.add
+("Video-play-symbol")+
+video.removeAttribute
+("src", "assets/video/video4.mp4")+
+video.removeAttribute
+("poster", "assets/video/poster4.png")+
+video.setAttribute
+("src", "assets/video/video2.mp4")+
+video.setAttribute
+("poster", "assets/video/poster2.jpg")
+      );
+    else if (
+e.which === 1 &&
+video.getAttribute("src")===
+"assets/video/video2.mp4"
+    )
+      return (
+video.pause +
+playButton.classList.remove
+("Video-controls-panel-pause-button")+
+playButton.classList.add
+("Video-controls-panel-play-button")+
+videoPlaySymbol.classList.remove
+("Video-play-symbol-fade") +
+videoPlaySymbol.classList.add
+("Video-play-symbol")+
+video.removeAttribute
+("src", "assets/video/video2.mp4")+
+video.removeAttribute
+("poster", "assets/video/poster2.jpg")+
+video.setAttribute
+("src", "assets/video/video.mp4")+
+video.setAttribute
+("poster", "assets/video/poster.jpg")
+      );
+  });
+        </pre></details>
+        </div>
+       <!--"Courses Certificates"-section-->
+       <div><h3 class="Sidebar-Title">Courses & Certificates</h3>
+      
+       <ul class="Tech-Interests-list">
+            <li class="Tech-Skills-content">
+              <span class="Tech-Skills-item"
+                >RS-School<br>"JavaScript/Front-end. Stage0"-course(2021)<br><a href="https://app.rs.school/certificate/zyp2vxgr"><span class="Certificate-text">See the certificate</span></a></span
+              >
+            </li>
+            <li class="Tech-Skills-content">
+              <span class="Tech-Skills-item"
+                >GoIT-School<br>"English HTML"-course(2021)<br><a href="https://i.ibb.co/DGZKgky/certificate.png"><span class="Certificate-text">See the certificate</span></a></span
+              >
+            </li>
+          </ul>
+      </div>
         <!--"Soft Skills"-section-->
         <div class="Soft-Skills-section">
           <h3 class="Soft-Skills-title">Soft Skills</h3>
-          <ul class="Soft-Skills-list">
             <li class="Soft-Skills-content">
               <span class="Soft-Skills-item">Fluent English</span>
             </li>
@@ -210,19 +688,19 @@
             </li>
             <li class="Soft-Skills-content">
               <span class="Soft-Skills-item">Teamwork</span>
-            </li>
-          </ul>
+            </li></div>
+        <div class="SM-section">
+          <div class="Github-section"><a class="Github-logo" href="https://www.github.com/Stellarator85"><image src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub-Logo" width="27.5" heigth="10">&nbsp;&nbsp;<span>My GitHub</span></a></div>
+          <a href="https://www.codewars.com/users/Stellarator85/"><div class="Codewars-section"></div></a>
         </div>
       </aside>
     </div>
 <!--Footer-section-->
       <footer class="Footer-section">
-        <strong>
-        <image src=github.png alt="GitHub-Logo" width="27.5" heigth="10">
-        <a href="https://www.github.com/Stellarator85">My GitHub</a> 2008<br>
+        <strong><a href="https://rs.school/js/">
         <image src="https://rs.school/images/rs_school_js.svg" alt="RSS-Logo" width="75" heigth="52"> 
-          <a href="https://rs.school/js-stage0/">Course: JavaScript/Front-end. Stage 0</a>
+          <span class="Footer-text">JavaScript/Front-end. Stage 1</span></a>
         </strong>
-    </footer>
+      </footer>
   </body>
 </html>
