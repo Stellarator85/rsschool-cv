@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -12,23 +12,24 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body id="top">
     <!--Main section-->
-    <div class="Main-section">
+    <main class="Main-section">
+      
       <!--Main content section-->
       <div class="Main-Content-section">
+        <nav ><a href="#about">about</a><a href="#experience">experience</a><a href="#education">education</a><a href="#certificates">certificates</a></nav>
         <div class="About-Me-section">
           <!--"About Me"-section-->
           <div>
             <h1 class="about-me-name">Tymur Shcherbyna</h1>
             <p class="about-me-russian-name">Тимур Щербина</p>
-            <h3 class="Main-Content-Titles">About Me</h3>
+            <h3 class="Main-Content-Titles" id="about">About Me</h3>
             <p class="about-me-text">
               Full Stack Developer Wannabe & IT-Switcher.<br />
               I am 36 years old.<br />
-              Got plenty of time to study programming
-              languages, libraries, frameworks, and other necessary
-              IT-technologies.<br />
+              Got plenty of time to study programming languages, libraries,
+              frameworks, and other necessary IT-technologies.<br />
               Fluent English speaker & writer since I resided and worked in an
               english-speaking environment for 5 years. Also have 5 years
               experience of remote work via the Internet.
@@ -37,8 +38,7 @@
         </div>
         <!--"My Work Experience"-section-->
         <div class="My-Work-Experience-section">
-          <h3 class="Main-Content-Titles">Work Experience</h3>
-
+          <h3 class="Main-Content-Titles" id="experience">Work Experience</h3>
           <!--Company#1-->
           <div class="My-Work-Experience-company">
             <h4 class="My-Work-Experience-position">
@@ -99,7 +99,7 @@
 
         <!--"My Education"-section-->
         <div class="My-education-section">
-          <h3 class="Main-Content-Titles">Education</h3>
+          <h3 class="Main-Content-Titles" id="education">Education</h3>
           <!--College/School#1-->
           <div>
             <h4 class="My-Education-college">Cherkasy National University</h4>
@@ -111,10 +111,70 @@
             </p>
           </div>
         </div>
+         <!--"Courses Certificates"-section-->
+         <div class="My-education-section">
+          <h3 class="Main-Content-Titles" id="certificates">IT Courses & Certificates</h3>
+            <h4 class="My-Work-Experience-position">
+              JavaScript/Front-end. Stage0
+              <span class="My-Work-Experience-employer">RS School</span>
+            </h4>
+            <p class="Education-period">
+              July - September 2021
+              <span class="My-Education-period-devider">|</span> Online
+            </p>
+           <a href="https://app.rs.school/certificate/zyp2vxgr" target="_blank"><img src="https://i.ibb.co/BGYbDfq/RS-certificate-mini.png" alt="RS-certificate" border="0"></a>
+
+          <h4 class="My-Work-Experience-position">
+              English HTML
+              <span class="My-Work-Experience-employer">GoIT-School</span>
+            </h4>
+            <p class="Education-period">
+              May 2021
+              <span class="My-Education-period-devider">|</span> Online
+            </p>
+            <a href="https://ibb.co/B2PX4S2" target="_blank"
+            ><img
+              src="https://i.ibb.co/rxv1wv1/Go-IT-certificate-mini.png"      
+              alt="certificate"
+              border="0"
+          /></a><a class="Back-to-Top" href="#top"><img class="Back-to-Top-icon"; src="Back_to_Top.svg" style="width: 200px;"></a>
+        </div>
+
+      <!--  <div>
+          <h3 class="Sidebar-Title">Courses & Certificates</h3>
+
+          <ul class="Tech-Interests-list">
+            <li class="Tech-Skills-content">
+              <span class="Tech-Skills-item"
+                >RS-School<br />"JavaScript/Front-end. Stage0"-course(2021)<br /><a
+                  href="https://app.rs.school/certificate/zyp2vxgr"
+                  target="_blank"
+                  ><span class="Certificate-text">See the certificate</span></a
+                ></span
+              >
+            </li>
+            <li class="Tech-Skills-content">
+              <span class="Tech-Skills-item"
+                >GoIT-School<br />"English HTML"-course(2021)<br /><a
+                  href="https://ibb.co/B2PX4S2"
+                  target="_blank"
+                  ><span class="Certificate-text">See the certificate</span></a
+                ></span
+              >
+            </li>
+          </ul>
+          <a href="https://ibb.co/B2PX4S2" target="_blank"
+            ><img
+              src="https://i.ibb.co/B2PX4S2/certificate.png"
+              alt="certificate"
+              border="0"
+          /></a>
+        </div> -->
+      
       </div>
       <!--Sidebar-section-->
       <aside class="Sidebar-section">
-        <img src="photo.jpg" class="My-Photo" alt="Tymur Shcherbyna">
+        <img src="photo.jpg" class="My-Photo" alt="Tymur Shcherbyna" />
         <!--"Location"-section-->
         <div class="Contacts-section">
           <h3 class="Location-Title">Location</h3>
@@ -147,12 +207,12 @@
               >stellarator85@gmail.com</a
             >
           </div>
-          <div>
+          <!--<div>
             <span class="Contact-Type">GitHub Username:</span>
             <a href="https://github.com/Stellarator85" class="Contact-Content"
               >Stellarator85</a
             >
-          </div>
+          </div>-->
           <div>
             <span class="Contact-Type">Discord Username:</span>
             <span class="Contact-Content">Stellarator85#0399</span>
@@ -180,7 +240,12 @@
             </li>
             <li class="Tech-Skills-content">
               <span class="Tech-Skills-item"
-                >JavaScript...............Junior level</span
+                >JavaScript........................Junior level</span
+              >
+            </li>
+            <li class="Tech-Skills-content">
+              <span class="Tech-Skills-item"
+                >Node.js..............................Junior level</span
               >
             </li>
             <li class="Tech-Skills-content">
@@ -188,13 +253,12 @@
                 >React.js.....................Pre-junior level</span
               >
             </li>
-            <li class="Tech-Skills-content">
-              <span class="Tech-Skills-item"
-                >Node.js......................Junior level</span
-              >
-            </li>
           </ul>
-          <details><summary><span class="Code-Example-Title">JS-Code example</span></summary><pre class="Code-Text">
+          <details>
+            <summary>
+              <span class="Code-Example-Title">JS-Code example(click to see)</span>
+            </summary>
+            <pre class="Code-Text">
 /* Project: Designing a custom videoplayer.
 
 Result you can find @ shorturl.at/fiuAT */
@@ -659,48 +723,35 @@ video.setAttribute
 ("poster", "assets/video/poster.jpg")
       );
   });
-        </pre></details>
+        </pre
+            >
+          </details>
         </div>
-       <!--"Courses Certificates"-section-->
-       <div><h3 class="Sidebar-Title">Courses & Certificates</h3>
-      
-       <ul class="Tech-Interests-list">
-            <li class="Tech-Skills-content">
-              <span class="Tech-Skills-item"
-                >RS-School<br>"JavaScript/Front-end. Stage0"-course(2021)<br><a href="https://app.rs.school/certificate/zyp2vxgr"><span class="Certificate-text">See the certificate</span></a></span
-              >
-            </li>
-            <li class="Tech-Skills-content">
-              <span class="Tech-Skills-item"
-                >GoIT-School<br>"English HTML"-course(2021)<br><a href="https://i.ibb.co/DGZKgky/certificate.png"><span class="Certificate-text">See the certificate</span></a></span
-              >
-            </li>
-          </ul>
-      </div>
         <!--"Soft Skills"-section-->
         <div class="Soft-Skills-section">
           <h3 class="Soft-Skills-title">Soft Skills</h3>
-            <li class="Soft-Skills-content">
-              <span class="Soft-Skills-item">Fluent English</span>
-            </li>
-            <li class="Soft-Skills-content">
-              <span class="Soft-Skills-item">Remote Work Experience</span>
-            </li>
-            <li class="Soft-Skills-content">
-              <span class="Soft-Skills-item">Teamwork</span>
-            </li></div>
-        <div class="SM-section">
-          <div class="Github-section"><a class="Github-logo" href="https://www.github.com/Stellarator85"><image src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub-Logo" width="27.5" heigth="10">&nbsp;&nbsp;<span>My GitHub</span></a></div>
-          <a href="https://www.codewars.com/users/Stellarator85/"><div class="Codewars-section"></div></a>
+          <li class="Soft-Skills-content">
+            <span class="Soft-Skills-item">Fluent English</span>
+          </li>
+          <li class="Soft-Skills-content">
+            <span class="Soft-Skills-item">Remote Work Experience</span>
+          </li>
+          <li class="Soft-Skills-content">
+            <span class="Soft-Skills-item">Teamwork</span>
+          </li>
         </div>
       </aside>
-    </div>
-<!--Footer-section-->
-      <footer class="Footer-section">
-        <strong><a href="https://rs.school/js/">
-        <image src="https://rs.school/images/rs_school_js.svg" alt="RSS-Logo" width="75" heigth="52"> 
-          <span class="Footer-text">JavaScript/Front-end. Stage 1</span></a>
-        </strong>
-      </footer>
+    </main>
+    <!--Footer-section-->
+    <footer class="Footer-section">
+      <a href="https://rs.school/js/" target="_blank"><image src="https://rs.school/images/rs_school_js.svg" alt="RSS-Logo" width="75" heigth="52"> 
+          <span class="Footer-text"><strong> </strong></span></a>
+      <a
+        href="https://www.codewars.com/users/Stellarator85/"
+        class="Codewars-section"
+        target="_blank"
+      ></a>
+      <div class="Github-section"><a class="Github-logo" href="https://www.github.com/Stellarator85" target="_blank"><image src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub-Logo" width="27.5" heigth="10">&nbsp;&nbsp;<span>My GitHub</span></a></div>
+    </footer>
   </body>
 </html>
