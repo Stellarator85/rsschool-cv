@@ -1,0 +1,481 @@
+* {
+  scroll-behavior: smooth;
+  user-select: text;
+}
+
+html {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+body {
+  font-family: "Montserrat";
+  background-color: #f5f7fa;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  min-height: 20%;
+  max-height: fit-content;
+  justify-content: center;
+}
+
+.Main-section {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: #fff;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* "Main content" section */
+
+.Main-Content-section {
+  padding: 7% 90px 100px 90px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  margin-bottom: 10px;
+  background-color: #12356ab9;
+  padding: 0 2% 0 2%;
+}
+
+a {
+  color: #fb6d3a;
+  position: relative;
+  text-decoration: none;
+  color: #fb6d3a;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.Main-Content-Titles {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 27px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+/* "About Me" section */
+
+.About-Me-section {
+  margin: 0 0 40px 0;
+}
+
+.about-me-profession {
+  font-size: 14px;
+  font-weight: 700;
+  color: #000;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 17px;
+  margin-bottom: 20px;
+}
+
+.about-me-name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 61px;
+  line-height: 55px;
+  color: #1309094b;
+  margin: 0 0 0px 0;
+}
+
+.about-me-russian-name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 31px;
+  line-height: 55px;
+  color: #1309094b;
+  margin-top: 1px;
+}
+
+.about-me-text {
+  width: 600px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #595959;
+}
+
+/* "My Projects" section*/
+
+.My-Projects-section {
+  margin-bottom: 50px;
+}
+
+.My-Projects-list {
+  padding: 0 0 0 18px;
+}
+
+.My-Projects-item {
+  color: #000000;
+  font-weight: bold;
+}
+
+.My-Projects-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #595959;
+  margin-left: 5px;
+}
+
+.My-Projects-link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #595959;
+}
+
+.My-Projects-bracket {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+}
+
+/* "My "Work Experience"-section */
+
+My-Work-Experience-position {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  margin: 0 0 10px 0;
+}
+
+.My-Work-Experience-employer {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fb6d3a;
+}
+
+.My-Work-Experience-period {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #a8a8a8;
+  margin: 0 0 10px 0;
+}
+
+.My-Work-Experience-devider {
+  color: #000000;
+}
+
+.My-Work-Experience-duties {
+  padding: 0 0 0 18px;
+}
+
+.My-Work-Experience-duties-item {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #595959;
+}
+
+.My-Work-Experience-company {
+  margin: 0 15px 0 0;
+}
+
+/* "My "Education"-section */
+
+.My-education-section {
+  margin-top: 50px;
+}
+
+.My-Education-college {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fb6d3a;
+}
+
+.My-Education-specialty {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.Education-period {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #a8a8a8;
+}
+
+.My-Education-period-devider {
+  color: #000000;
+}
+
+.Back-to-Top {
+  scroll-behavior: smooth;
+  margin-bottom: 0px;
+  position: absolute;
+  margin-left: 32.5%;
+  margin-top: 1%;
+}
+
+.Back-to-Top-icon {
+  opacity: 25%;
+  transition-duration: 0.75s;
+}
+
+.Back-to-Top-icon:hover {
+  opacity: 50%;
+  transition-duration: 0.75s;
+}
+
+/* Sidebar Section */
+.Sidebar-section {
+  background-color: #12356ab9;
+  width: 381px;
+  padding-top: 78px;
+  text-align: center;
+  text-shadow: rgb(80, 84, 87);
+  /*
+  display: flex;
+  flex-direction: row;
+  column-gap: 4%;
+  */
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.My-Photo {
+  width: inherit;
+}
+
+.Location-Title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 27px;
+  color: #ffffff;
+  margin-top: 50px;
+  margin-bottom: 1px;
+}
+
+.Sidebar-Title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 27px;
+  color: #ffffff;
+  margin-bottom: 1px;
+}
+
+.Location-section {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.Location-item {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+/* "Contacts"-section */
+.Contact-Type {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.Contact-Content {
+  color: #fb6d3a;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+/* "Tech Skills"-section */
+.Tech-Interests-list {
+  text-align: left;
+  margin-top: 1px;
+  padding-left: 91px;
+  padding-right: 66px;
+}
+
+/*padding-left: 91px;
+  padding-right: 62px;*/
+
+.Tech-Skills-content {
+  color: #fb6d3a;
+}
+
+.Tech-Skills-item {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-left: 0px;
+}
+
+/* "JS-Code"-section */
+
+details {
+  /* border: solid 1.5px red; */
+  width: 381px;
+  color: #fb6d3a;
+}
+summary {
+  color: #fb6d3a;
+  height: 27.5px;
+
+  /*border: solid 1.5px red; */
+}
+
+summary:hover {
+  cursor: pointer;
+}
+
+.Code-Example-Title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 27px;
+  color: #ffffff;
+  height: 20px;
+  /* border: solid 1.5px red; */
+}
+
+.Code-Text {
+  font-size: 12px;
+  text-align: left;
+}
+
+/* "Courses & Certificates" - Section */
+
+.Certificate-text {
+  color: #fb6d3a;
+}
+
+/* "Soft Skills"-section */
+
+.Soft-Skills-section {
+  align-content: inherit;
+  text-align: inherit;
+}
+
+.Soft-Skills-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 27px;
+  color: #ffffff;
+  margin-bottom: 0px;
+  align-content: inherit;
+  text-align: inherit;
+}
+
+.Soft-Skills-list {
+  align-content: inherit;
+  margin-top: 1px;
+  padding-left: 91px;
+  padding-right: 66px;
+  text-align: inherit;
+}
+
+.Soft-Skills-content {
+  color: #fb6d3a;
+  align-content: inherit;
+  text-align: inherit;
+}
+.Soft-Skills-item {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  align-content: inherit;
+  text-align: inherit;
+}
+
+/* Footer-section */
+.Footer-section {
+  width: inherit;
+
+  background-color: inherit;
+  text-align: center;
+  font-family: "Montserrat";
+
+  color: blue;
+  box-shadow: 1.5px 1.5px 7px rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  column-gap: 5px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+/*padding-left: 91px;
+padding-right: 66px; */
+
+.Footer-text {
+  color: #1a75ffec;
+  text-underline-position: above;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+.Github-section {
+  vertical-align: middle;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.Github-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #1a75ffec;
+}
+
+.Codewars-section {
+  width: 26%;
+  height: 35px;
+  background-image: url(https://www.codewars.com/users/Stellarator85/badges/large/);
+  background-size: 100% 200%;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+
+  /* justify-self: center;  */
+}
