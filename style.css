@@ -1,3 +1,8 @@
+* {
+  scroll-behavior: smooth;
+  user-select: text;
+}
+
 html {
   display: flex;
   justify-content: center;
@@ -10,7 +15,8 @@ body {
   display: flex;
   flex-direction: column;
   align-content: center;
-  min-height: 180%;
+  min-height: 20%;
+  max-height: fit-content;
   justify-content: center;
 }
 
@@ -24,7 +30,27 @@ body {
 /* "Main content" section */
 
 .Main-Content-section {
-  padding: 100px 90px 100px 90px;
+  padding: 7% 90px 100px 90px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  margin-bottom: 10px;
+  background-color: #12356ab9;
+  padding: 0 2% 0 2%;
+}
+
+a {
+  color: #fb6d3a;
+  position: relative;
+  text-decoration: none;
+  color: #fb6d3a;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .Main-Content-Titles {
@@ -201,6 +227,24 @@ My-Work-Experience-position {
   color: #000000;
 }
 
+.Back-to-Top {
+  scroll-behavior: smooth;
+  margin-bottom: 0px;
+  position: absolute;
+  margin-left: 32.5%;
+  margin-top: 1%;
+}
+
+.Back-to-Top-icon {
+  opacity: 25%;
+  transition-duration: 0.75s;
+}
+
+.Back-to-Top-icon:hover {
+  opacity: 50%;
+  transition-duration: 0.75s;
+}
+
 /* Sidebar Section */
 .Sidebar-section {
   background-color: #12356ab9;
@@ -208,11 +252,18 @@ My-Work-Experience-position {
   padding-top: 78px;
   text-align: center;
   text-shadow: rgb(80, 84, 87);
+  /*
+  display: flex;
+  flex-direction: row;
+  column-gap: 4%;
+  */
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
 }
 
 .My-Photo {
-  display: flex;
-  flex-direction: row-reverse;
   width: inherit;
 }
 
@@ -266,6 +317,7 @@ My-Work-Experience-position {
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
+  text-decoration: none;
 }
 
 /* "Tech Skills"-section */
@@ -304,6 +356,10 @@ summary {
   height: 27.5px;
 
   /*border: solid 1.5px red; */
+}
+
+summary:hover {
+  cursor: pointer;
 }
 
 .Code-Example-Title {
@@ -368,21 +424,38 @@ summary {
   text-align: inherit;
 }
 
-/* Social Media Section */
+/* Footer-section */
+.Footer-section {
+  width: inherit;
 
-.SM-section {
-  margin-top: 20px;
-  margin-bottom: 5px;
+  background-color: inherit;
+  text-align: center;
+  font-family: "Montserrat";
+
+  color: blue;
+  box-shadow: 1.5px 1.5px 7px rgba(0, 0, 0, 0.45);
   display: flex;
-  flex-direction: column;
-  row-gap: 5px;
   justify-items: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  column-gap: 5px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+/*padding-left: 91px;
+padding-right: 66px; */
+
+.Footer-text {
+  color: #1a75ffec;
+  text-underline-position: above;
+  text-decoration: none;
+  font-family: sans-serif;
 }
 
 .Github-section {
   vertical-align: middle;
 
-  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -391,36 +464,18 @@ summary {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
+  color: #1a75ffec;
 }
 
 .Codewars-section {
-  width: 100%;
-  height: 30px;
+  width: 26%;
+  height: 35px;
   background-image: url(https://www.codewars.com/users/Stellarator85/badges/large/);
-  background-size: 80%;
+  background-size: 100% 200%;
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
 
-  justify-self: center;
-}
-
-/* Footer-section */
-.Footer-section {
-  width: inherit;
-  background-color: inherit;
-  text-align: center;
-  font-family: "Montserrat";
-  padding-top: 15px;
-  color: blue;
-  box-shadow: 1.5px 1.5px 7px rgba(0, 0, 0, 0.45);
-}
-/*padding-left: 91px;
-padding-right: 66px; */
-a {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-}
-.Footer-text {
-  color: #1a75ffec;
+  /* justify-self: center;  */
 }
