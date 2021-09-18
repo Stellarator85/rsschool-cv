@@ -18,55 +18,54 @@
       <!--Burger-menu section-->
 
       <div id="Burger-menu" class="Burger-menu-container">
-        <svg
-          class="Burger-menu-icon"
-          viewBox="0 0 32 32"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"
-            style="fill: #fff"
-          />
-        </svg>
+        <div class="Burger-menu-icon">
+          <svg viewBox="0 0 32 32" preserveAspectRatio="none">
+            <path
+              d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"
+              style="fill: #fff"
+            />
+          </svg>
+        </div>
       </div>
 
       <script>
-        let burgerMenuButton = document.querySelector(".Burger-menu-container");
+        let burgerMenuButton = document.getElementById("Burger-menu");
         let mainSection = document.querySelector(".Main-section");
         let burgerMenuList = document.querySelector(".Burger-menu-list");
         let mainContentSection = document.querySelector(".About-me-section");
         /* */
-        document
-          .getElementById("Burger-menu")
-          .addEventListener("mouseover", function (event) {
-            if (burgerMenuButton.classList.contains("Burger-menu-container"))
-              return (
-                burgerMenuButton.classList.add("Burger-menu-container-large") +
-                (burgerMenuButton.innerHTML =
-                  '<svg class="Burger-menu-icon" width="80px" height="69px" viewBox="0 0 32 32" preserveAspectRatio="none"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2 s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2 S29.104,22,28,22z" style="fill:#fff"/></svg><ul class="Burger-menu-list"><li><a class="Burger-menu-list-item" href="#about">About</a></li><li><a class="Burger-menu-list-item" href="#experience">Experience</a></li><li><a class="Burger-menu-list-item" href="#education">Education</a></li><li><a class="Burger-menu-list-item" href="#certificates">Certificates</a></li><li><a class="Burger-menu-list-item" href="#skills">Skills</a></li><li><a class="Burger-menu-list-item" id="cod" href="#code">Code&nbsp;Example</a></li><li><a class="Burger-menu-list-item" href="https://github.com/Stellarator85" target="_blank">GitHub</a></li><li><a class="Burger-menu-list-item" href="#contacts">Contacts</a></li></ul>')
-              );
-          });
+        burgerMenuButton.addEventListener("mouseover", function (event) {
+          if (burgerMenuButton.classList.contains("Burger-menu-container"))
+            return (
+              (burgerMenuButton.innerHTML =
+                '<div class="Burger-menu-icon"><svg viewBox="0 0 32 32" preserveAspectRatio="none"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2 s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2 S29.104,22,28,22z" style="fill:#fff"/></svg></div><ul class="Burger-menu-list"><li class="Burger-menu-list-item-container"><a class="Burger-menu-list-item" href="#about">About</a></li><li class="Burger-menu-list-item-container"><a class="Burger-menu-list-item" href="#experience">Experience</a></li><li class="Burger-menu-list-item-container"><a class="Burger-menu-list-item" href="#education">Education</a></li><li class="Burger-menu-list-item-container"><a class="Burger-menu-list-item" href="#certificates">Certificates</a></li><li class="Burger-menu-list-item-container"><a class="Burger-menu-list-item" href="#skills">Skills</a></li><li class="Burger-menu-list-item-container"><a class="Burger-menu-list-item" id="cod" href="#code">Code&nbsp;Example</a></li><li class="Burger-menu-list-item-container"><a class="Burger-menu-list-item" href="https://github.com/Stellarator85" target="_blank">GitHub</a></li><li class="Burger-menu-list-item-container"><a class="Burger-menu-list-item" href="#contacts">Contacts</a></li></ul>') +
+              burgerMenuButton.classList.add("Burger-menu-container-large")
+            );
+        });
         burgerMenuButton.addEventListener("mouseout", function (event) {
           if (
             burgerMenuButton.classList.contains("Burger-menu-container-large")
           )
             return (
-              (burgerMenuButton.innerHTML =
-                '<svg class="Burger-menu-icon" viewBox="0 0 32 32" preserveAspectRatio="none"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2 s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2 S29.104,22,28,22z" style="fill:#fff"/></svg>') +
-              burgerMenuButton.classList.remove("Burger-menu-container-large")
+              burgerMenuButton.classList.add("Burger-menu-container") +
+              burgerMenuButton.classList.remove("Burger-menu-container-large")+
+                (burgerMenuButton.innerHTML =
+                  '<div class="Burger-menu-icon"><svg viewBox="0 0 32 32" preserveAspectRatio="none"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2 s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2 S29.104,22,28,22z" style="fill:#fff"/></svg></div>')
+              
             );
         });
       </script>
       <!--Main content section-->
       <div class="Main-content-section">
         <nav>
-          <span style="color: whitesmoke">|</span><a href="#about">about</a
+          <span style="color: whitesmoke">|</span
+          ><a class="Top-menu-options-item" href="#about">about</a
           ><span style="color: whitesmoke">|</span
-          ><a href="#experience">experience</a
+          ><a class="Top-menu-options-item" href="#experience">experience</a
           ><span style="color: whitesmoke">|</span
-          ><a href="#education">education</a
+          ><a class="Top-menu-options-item" href="#education">education</a
           ><span style="color: whitesmoke">|</span
-          ><a href="#certificates">certificates</a
+          ><a class="Top-menu-options-item" href="#certificates">certificates</a
           ><span style="color: whitesmoke">|</span>
         </nav>
         <div class="About-me-section">
@@ -322,7 +321,7 @@
             </summary>
             <pre
               style="color: #d1d1d1"
-            ><span style="color:#9999a9; ">/* Project: Designing a custom videoplayer.</span>
+            >  <!-- <span style="color:#9999a9; ">/* Project: Designing a custom videoplayer.</span>
 <span style="color:#9999a9; "></span>
 <span style="color:#9999a9; ">Result you can find @ shorturl.at/fiuAT */</span>
 
@@ -785,7 +784,7 @@ video<span style="color:#d2cd86; ">.</span>setAttribute
 <span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">src</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">,</span> <span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">assets/video/video.mp4</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">+</span>
 video<span style="color:#d2cd86; ">.</span>setAttribute
 <span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">poster</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">,</span> <span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">assets/video/poster.jpg</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span>
-      <span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+      <span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span> -->
 </pre>
           </details>
         </div>
