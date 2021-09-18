@@ -41,36 +41,36 @@ body {
   display: flex;
   flex-direction: column;
   row-gap: 0px;
-  justify-content: center;
-  align-content: center;
   margin-top: 0%;
-  margin-right: 92.5%;
+  margin-right: 93.15%;
   opacity: 80%;
+  transition-duration: 0.5s;
   width: 80px;
   height: 69px; /*
-  border: 0.001px solid green; */
+  border: 3px solid green; */
 }
 
-/*.Burger-menu-container:hover {
+.Burger-menu-container:hover {
   opacity: 100%;
-  box-shadow: 6px 6px 50px rgba(0, 0, 0, 0.1);
+  transition-duration: 0.5s; /*
+  box-shadow: 6px 6px 50px rgba(0, 0, 0, 0.1); */
 }
-*/
+
 .Burger-menu-container-large {
-  padding: 0%;
   position: absolute;
   display: flex;
   flex-direction: column;
   row-gap: 0%;
-  margin-top: 0%;
-  margin-right: 79.35%;
   padding-top: 0px;
-  opacity: 80%;
-  width: 230px;
-  height: 350px;
-  background-color: #12356ab9;
-
-  border: 3px #12356ab9 solid;
+  padding-left: 0px;
+  margin-top: 0%;
+  margin-right: 67.4%;
+  opacity: 100%;
+  width: 31.96%;
+  height: 24.2%;
+  background-color: #12356ab9; /*
+  border: solid 2px orange; */
+  border: 4px #12356ab9 solid;
 }
 /*
 .Burger-menu-container-large:hover {
@@ -79,20 +79,28 @@ body {
 }
 */
 .Burger-menu-icon {
+  display: flex;
+  align-items: center;
+  justify-items: center;
   width: 80px;
-  height: 69px; /*
-  border: 3px blue solid; */
+  height: 67px; /*
+  border: 3px #12356ab9 solid; */
 }
 
 .Burger-menu-list {
-  margin: 0 auto;
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0%;
+  justify-items: center;
+  height: 79.3%;
   padding: 0%;
   display: flex;
   flex-direction: column;
   row-gap: 0%;
   list-style: none;
-  opacity: 100%;
-  /* border: 3px solid green; */
+  opacity: 80%; /*
+  border: 3px solid rgb(255, 0, 0);*/ /*
   height: fit-content;
   width: 100%;
   /*
@@ -102,23 +110,37 @@ body {
   background-color: #12356ab9; */
 }
 
+.Burger-menu-list-item-container {
+  text-decoration: none;
+  border: 2px solid rgb(223, 220, 220);
+  height: 11%;
+  color: #fb6d3a;
+}
+/*
+.Burger-menu-list-item-container:hover {
+  color: rgb(204, 16, 16);
+}
+*/
 .Burger-menu-list-item {
   display: flex;
+  color: #fb6d3a;
   text-align: left;
   opacity: 100%;
   width: 100%;
-  height: fit-content;
-
   font-style: normal;
   font-weight: bold;
   font-size: 31px;
-  line-height: 35px;
-  color: #000000;
+  height: 79.3%;
+  color: #ffffff;
+  text-decoration: none;
   /* border: 3px solid rgb(4, 4, 4); */
+  opacity: 100%;
 }
 
 .Burger-menu-list-item:hover {
-  color: #fb6d3a;
+  opacity: 100%;
+  color: #fb6d3a !important;
+  transition-duration: 0.3s;
 }
 
 /* "Main content" section */
@@ -138,7 +160,7 @@ nav {
   border-radius: 10px;
 }
 
-a {
+.Top-menu-options-item {
   color: #fb6d3a;
   position: relative;
   text-decoration: none;
@@ -146,6 +168,13 @@ a {
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
+  opacity: 100%;
+  transition-duration: 0.5s;
+}
+
+.Top-menu-options-item:hover {
+  opacity: 70%;
+  transition-duration: 0.35s;
 }
 
 .Main-Content-Titles {
@@ -344,7 +373,7 @@ My-Work-Experience-position {
 /* Sidebar Section */
 .Sidebar-section {
   background-color: #12356ab9;
-  width: 381px;
+  width: 379.75px;
   padding-top: 75px;
   text-align: center;
   text-shadow: rgb(80, 84, 87);
