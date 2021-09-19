@@ -1,6 +1,8 @@
 * {
   scroll-behavior: smooth;
   user-select: text;
+  -moz-appearance: none;
+  -webkit-appearance: none;
 }
 
 html {
