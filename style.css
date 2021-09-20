@@ -186,7 +186,7 @@ nav {
   font-style: normal;
   font-weight: bold;
   font-size: 170%;
-  line-height: 27px;
+  line-height: 50%;
   color: #000000;
   margin-bottom: 10px;
 }
@@ -213,8 +213,7 @@ nav {
 .about-me-name {
   font-style: normal;
   font-weight: bold;
-  font-size: 396%;
-
+  font-size: 325%;
   color: #1309094b;
   margin: 0 0 0px 0;
 }
@@ -231,7 +230,7 @@ nav {
   font-style: normal;
   font-weight: normal;
   font-size: 90%;
-  line-height: 24px;
+  line-height: 190%;
   color: #595959;
 }
 
@@ -290,7 +289,7 @@ My-Work-Experience-position {
   font-style: normal;
   font-weight: bold; /*
   font-size: 16px; */
-  line-height: 20px;
+
   color: #fb6d3a;
 }
 
@@ -298,7 +297,7 @@ My-Work-Experience-position {
   font-style: normal;
   font-weight: normal;
   font-size: 83.5%;
-  line-height: 15px;
+
   color: #a8a8a8;
   margin: 0 0 10px 0;
 }
@@ -315,7 +314,7 @@ My-Work-Experience-position {
   font-style: normal;
   font-weight: normal;
   font-size: 87.5%;
-  line-height: 24px;
+  line-height: 150%;
   color: #595959;
 }
 
@@ -333,7 +332,6 @@ My-Work-Experience-position {
   font-style: normal;
   font-weight: bold;
   /* font-size: 16px; */
-  line-height: 20px;
   color: #fb6d3a;
 }
 
@@ -341,7 +339,6 @@ My-Work-Experience-position {
   font-style: normal;
   font-weight: bold;
   font-size: 100%;
-  line-height: 17px;
   color: #000000;
 }
 
@@ -349,7 +346,7 @@ My-Work-Experience-position {
   font-style: normal;
   font-weight: normal;
   font-size: 85%;
-  line-height: 15px;
+
   color: #a8a8a8;
 }
 
@@ -399,7 +396,7 @@ My-Work-Experience-position {
   font-style: normal;
   font-weight: bold;
   font-size: 170%;
-  line-height: 27px;
+
   color: #ffffff;
   margin-top: 50px;
   margin-bottom: 1px;
@@ -409,7 +406,7 @@ My-Work-Experience-position {
   font-style: normal;
   font-weight: bold;
   font-size: 150%;
-  line-height: 27px;
+
   color: #ffffff;
   margin-bottom: 1px;
 }
@@ -418,7 +415,7 @@ My-Work-Experience-position {
   font-style: normal;
   font-weight: bold;
   font-size: 100%;
-  line-height: 24px;
+
   color: #ffffff;
 }
 
@@ -426,7 +423,7 @@ My-Work-Experience-position {
   font-style: normal;
   font-weight: bold;
   font-size: 100%;
-  line-height: 24px;
+
   color: #ffffff;
 }
 
@@ -443,7 +440,7 @@ My-Work-Experience-position {
   font-style: normal;
   font-weight: bold;
   font-size: 100%;
-  line-height: 24px;
+  line-height: 140%;
   color: #ffffff;
 }
 
@@ -452,7 +449,7 @@ My-Work-Experience-position {
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
-  line-height: 24px;
+
   text-decoration: none;
 }
 
@@ -475,7 +472,7 @@ My-Work-Experience-position {
   font-style: normal;
   font-weight: normal;
   font-size: 87.5%;
-  line-height: 24px;
+  line-height: 180%;
   color: #ffffff;
   margin-left: 0px;
 }
@@ -489,7 +486,6 @@ details {
 }
 summary {
   color: #fb6d3a;
-  height: 27.5px;
 
   /*border: solid 1.5px red; */
 }
@@ -507,7 +503,6 @@ pre {
   font-style: normal;
   font-weight: bold;
   font-size: 110%;
-  line-height: 27px;
   color: #ffffff;
   height: 20px;
   /* border: solid 1.5px red; */
@@ -535,7 +530,7 @@ pre {
   font-style: normal;
   font-weight: bold;
   font-size: 155%;
-  line-height: 27px;
+
   color: #ffffff;
   margin-bottom: 0px;
 }
@@ -555,7 +550,7 @@ pre {
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
-  line-height: 24px;
+  line-height: 145%;
   color: #ffffff;
 }
 
