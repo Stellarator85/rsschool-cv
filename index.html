@@ -30,10 +30,6 @@
 
       <script>
         let burgerMenuButton = document.getElementById("Burger-menu");
-        let mainSection = document.querySelector(".Main-section");
-        let burgerMenuList = document.querySelector(".Burger-menu-list");
-        let mainContentSection = document.querySelector(".About-me-section");
-        /* */
         burgerMenuButton.addEventListener("mouseover", function (event) {
           if (burgerMenuButton.classList.contains("Burger-menu-container"))
             return (
@@ -47,7 +43,6 @@
             burgerMenuButton.classList.contains("Burger-menu-container-large")
           )
             return (
-              burgerMenuButton.classList.add("Burger-menu-container") +
               burgerMenuButton.classList.remove("Burger-menu-container-large") +
               (burgerMenuButton.innerHTML =
                 '<div class="Burger-menu-icon"><svg viewBox="0 0 32 32" preserveAspectRatio="none"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2 s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2 S29.104,22,28,22z" style="fill:#fff"/></svg></div>')
@@ -72,7 +67,7 @@
           <div>
             <h1 class="about-me-name">Tymur Shcherbyna</h1>
             <p class="about-me-russian-name">Тимур Щербина</p>
-            <h3 class="Main-Content-Titles" id="about">About Me</h3>
+            <h3 class="Main-Content-Titles" id="about">- About Me -</h3>
             <p class="about-me-text">
               Full Stack Developer Wannabe & IT-Switcher.<br />
               I am 36 years old.<br />
@@ -86,7 +81,7 @@
         </div>
         <!--"My Work Experience"-section-->
         <div class="My-Work-Experience-section">
-          <h3 class="Main-Content-Titles" id="experience">Work Experience</h3>
+          <h3 class="Main-Content-Titles" id="experience">- Work Experience -</h3>
           <!--Company#1-->
           <div class="My-Work-Experience-company">
             <h4 class="My-Work-Experience-position">
@@ -147,7 +142,7 @@
 
         <!--"My Education"-section-->
         <div class="My-education-section">
-          <h3 class="Main-Content-Titles" id="education">Education</h3>
+          <h3 class="Main-Content-Titles" id="education">- Education -</h3>
           <!--College/School#1-->
           <div>
             <h4 class="My-Education-college">Cherkasy National University</h4>
@@ -192,37 +187,6 @@
               alt="Go-IT-certificate"
           /></a>
         </div>
-
-        <!--  <div>
-          <h3 class="Sidebar-Title">Courses & Certificates</h3>
-
-          <ul class="Tech-Interests-list">
-            <li class="Tech-Skills-content">
-              <span class="Tech-Skills-item"
-                >RS-School<br />"JavaScript/Front-end. Stage0"-course(2021)<br /><a
-                  href="https://app.rs.school/certificate/zyp2vxgr"
-                  target="_blank"
-                  ><span class="Certificate-text">See the certificate</span></a
-                ></span
-              >
-            </li>
-            <li class="Tech-Skills-content">
-              <span class="Tech-Skills-item"
-                >GoIT-School<br />"English HTML"-course(2021)<br /><a
-                  href="https://ibb.co/B2PX4S2"
-                  target="_blank"
-                  ><span class="Certificate-text">See the certificate</span></a
-                ></span
-              >
-            </li>
-          </ul>
-          <a href="https://ibb.co/B2PX4S2" target="_blank"
-            ><img
-              src="https://i.ibb.co/B2PX4S2/certificate.png"
-              alt="certificate"
-              border="0"
-          /></a>
-        </div> -->
       </div>
       <!--Sidebar-section-->
       <aside class="Sidebar-section">
