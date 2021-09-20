@@ -1,8 +1,6 @@
 * {
   scroll-behavior: smooth;
   user-select: text;
-  -moz-appearance: none;
-  -webkit-appearance: none;
 }
 
 html {
@@ -17,18 +15,19 @@ body {
   display: flex;
   flex-direction: column;
   align-content: center;
-  min-height: 20%;
-  max-height: fit-content;
+  justify-self: center;
+  align-self: center;
   justify-content: center;
-  /* border: 2px rgb(47, 158, 79) solid; */
+  width: 95%;
 }
 
 .Main-section {
   display: flex;
   flex-direction: row-reverse;
   background-color: #fff;
-  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1); */
   position: relative;
+  width: 100%;
 }
 /*
 #Burger-menu {
@@ -42,38 +41,35 @@ body {
   display: flex;
   flex-direction: column;
   row-gap: 0px;
-  margin-top: 4px;
+  margin-top: 0.35%;
   margin-right: 92.83%;
-  opacity: 80%;
+  opacity: 70%;
   transition-duration: 0s;
-  width: 80px;
-  height: 69px;
-  transition-duration: 0s;
+
   /*
   border: 3px solid green; */
 }
-
+/*
 .Burger-menu-container:hover {
-  opacity: 100%;
-  transition-duration: 0.005s; /*
-  box-shadow: 6px 6px 50px rgba(0, 0, 0, 0.1); */
+  transition-duration: 0.05s; /*
+  box-shadow: 6px 6px 50px rgba(0, 0, 0, 0.1); 
 }
-
+*/
 .Burger-menu-container-large {
+  opacity: 100%;
   position: absolute;
   display: flex;
   flex-direction: column;
-  row-gap: 0%;
-  padding-top: 0px;
-  padding-left: 0px;
+  row-gap: 6%;
+  padding-top: 0%;
+  padding-left: 0%;
   margin-top: 0%;
-  margin-right: 67.4%;
+  margin-right: 67.26%;
   opacity: 100%;
-  width: 372px;
-  height: 375px;
-  background-color: #12356ab9; /*
-  border: solid 2px orange; */
-  border: 4px #12356ab9 solid;
+  width: 32%;
+  height: 28.7%;
+  background-color: #12356ab9;
+  border: 0.29rem #12356ab9 solid;
 }
 /*
 .Burger-menu-container-large:hover {
@@ -81,12 +77,23 @@ body {
   box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
 }
 */
-.Burger-menu-icon {
+.Burger-menu-icon-1 {
   display: flex;
   align-items: center;
   justify-items: center;
-  width: 80px;
-  height: 69px;
+  width: 76%;
+  height: 10%;
+  opacity: 100%;
+  transition-duration: 0.5s;
+}
+
+.Burger-menu-icon-2 {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  width: 16%;
+  opacity: 100%;
+  transition-duration: 0.5s;
 }
 
 .Burger-menu-list {
@@ -118,10 +125,6 @@ body {
   height: 11%;
 }
 
-.Burger-menu-list-item-container:hover {
-  color: rgb(204, 16, 16);
-}
-
 .Burger-menu-list-item {
   display: flex;
   text-align: left;
@@ -129,26 +132,27 @@ body {
   width: 100%;
   font-style: normal;
   font-weight: bold;
-  font-size: 31px;
+  font-size: 225%;
   height: 79.3%;
   color: #ffffff;
   text-decoration: none;
   /* border: 3px solid rgb(4, 4, 4); */
   opacity: 100%;
+  scroll-behavior: smooth;
 }
 
 .Burger-menu-list-item:hover {
   opacity: 100%;
   color: #fb6d3a !important;
-  transition-duration: 0.3s;
+  transition-duration: 0.18s;
 }
 
 /* "Main content" section */
 
 .Main-content-section {
   position: relative;
-  padding: 2.5% 90px 100px 90px; /*
-  border: 3px rgb(0, 255, 72) solid; .*/
+  padding: 2.5% 7.5% 12% 7.5%;
+  width: 60%;
 }
 
 nav {
@@ -167,10 +171,10 @@ nav {
   text-decoration: none;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 100%;
   opacity: 100%;
   transition-duration: 0.5s;
+  scroll-behavior: smooth;
 }
 
 .Top-menu-options-item:hover {
@@ -181,7 +185,7 @@ nav {
 .Main-Content-Titles {
   font-style: normal;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 170%;
   line-height: 27px;
   color: #000000;
   margin-bottom: 10px;
@@ -194,6 +198,7 @@ nav {
   height: fit-content;
 }
 
+/*
 .about-me-profession {
   font-size: 14px;
   font-weight: 700;
@@ -203,12 +208,13 @@ nav {
   line-height: 17px;
   margin-bottom: 20px;
 }
+*/
 
 .about-me-name {
   font-style: normal;
   font-weight: bold;
-  font-size: 61px;
-  line-height: 55px;
+  font-size: 396%;
+
   color: #1309094b;
   margin: 0 0 0px 0;
 }
@@ -216,23 +222,21 @@ nav {
 .about-me-russian-name {
   font-style: normal;
   font-weight: bold;
-  font-size: 31px;
-  line-height: 55px;
+  font-size: 200%;
   color: #1309094b;
   margin-top: 1px;
 }
 
 .about-me-text {
-  width: 600px;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 90%;
   line-height: 24px;
   color: #595959;
 }
 
 /* "My Projects" section*/
-
+/*
 .My-Projects-section {
   margin-bottom: 50px;
 }
@@ -272,7 +276,7 @@ nav {
 }
 
 /* "My "Work Experience"-section */
-
+/*
 My-Work-Experience-position {
   font-style: normal;
   font-weight: bold;
@@ -281,11 +285,11 @@ My-Work-Experience-position {
   color: #000000;
   margin: 0 0 10px 0;
 }
-
+*/
 .My-Work-Experience-employer {
   font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
+  font-weight: bold; /*
+  font-size: 16px; */
   line-height: 20px;
   color: #fb6d3a;
 }
@@ -293,7 +297,7 @@ My-Work-Experience-position {
 .My-Work-Experience-period {
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
+  font-size: 83.5%;
   line-height: 15px;
   color: #a8a8a8;
   margin: 0 0 10px 0;
@@ -304,19 +308,19 @@ My-Work-Experience-position {
 }
 
 .My-Work-Experience-duties {
-  padding: 0 0 0 18px;
+  padding: 0 0 0 5%;
 }
 
 .My-Work-Experience-duties-item {
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 87.5%;
   line-height: 24px;
   color: #595959;
 }
 
 .My-Work-Experience-company {
-  margin: 0 15px 0 0;
+  margin: 0 0 0 0;
 }
 
 /* "My "Education"-section */
@@ -328,7 +332,7 @@ My-Work-Experience-position {
 .My-Education-college {
   font-style: normal;
   font-weight: bold;
-  font-size: 16px;
+  /* font-size: 16px; */
   line-height: 20px;
   color: #fb6d3a;
 }
@@ -336,7 +340,7 @@ My-Work-Experience-position {
 .My-Education-specialty {
   font-style: normal;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 100%;
   line-height: 17px;
   color: #000000;
 }
@@ -344,7 +348,7 @@ My-Work-Experience-position {
 .Education-period {
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
+  font-size: 85%;
   line-height: 15px;
   color: #a8a8a8;
 }
@@ -356,7 +360,7 @@ My-Work-Experience-position {
 .Back-to-Top {
   position: absolute;
   scroll-behavior: smooth;
-  margin-left: 75%;
+  margin-left: 50%;
   margin-bottom: 25%;
 }
 
@@ -373,7 +377,7 @@ My-Work-Experience-position {
 /* Sidebar Section */
 .Sidebar-section {
   background-color: #12356ab9;
-  width: 379.75px;
+  width: 37.55%; /*  379.75px; */
   padding-top: 75px;
   text-align: center;
   text-shadow: rgb(80, 84, 87);
@@ -388,13 +392,13 @@ My-Work-Experience-position {
 }
 
 .My-Photo {
-  width: inherit;
+  width: 100%;
 }
 
 .Location-Title {
   font-style: normal;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 170%;
   line-height: 27px;
   color: #ffffff;
   margin-top: 50px;
@@ -404,7 +408,7 @@ My-Work-Experience-position {
 .Sidebar-Title {
   font-style: normal;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 150%;
   line-height: 27px;
   color: #ffffff;
   margin-bottom: 1px;
@@ -413,7 +417,7 @@ My-Work-Experience-position {
 .Location-section {
   font-style: normal;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 100%;
   line-height: 24px;
   color: #ffffff;
 }
@@ -421,7 +425,7 @@ My-Work-Experience-position {
 .Location-item {
   font-style: normal;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 100%;
   line-height: 24px;
   color: #ffffff;
 }
@@ -438,7 +442,7 @@ My-Work-Experience-position {
 .Contact-Type {
   font-style: normal;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 100%;
   line-height: 24px;
   color: #ffffff;
 }
@@ -447,30 +451,30 @@ My-Work-Experience-position {
   color: #fb6d3a;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 100%;
   line-height: 24px;
   text-decoration: none;
 }
 
 /* "Tech Skills"-section */
 .Tech-Interests-list {
-  text-align: left;
   margin-top: 1px;
-  padding-left: 91px;
-  padding-right: 66px;
-}
 
-/*padding-left: 91px;
-  padding-right: 62px;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 6%;
+}
 
 .Tech-Skills-content {
   color: #fb6d3a;
+  width: 90%;
 }
 
 .Tech-Skills-item {
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 87.5%;
   line-height: 24px;
   color: #ffffff;
   margin-left: 0px;
@@ -480,7 +484,7 @@ My-Work-Experience-position {
 
 details {
   /* border: solid 1.5px red; */
-  width: 381px;
+  width: 99%;
   color: #fb6d3a;
 }
 summary {
@@ -495,14 +499,14 @@ summary:hover {
 }
 
 pre {
-  font-size: 12px;
+  font-size: 95%;
   text-align: left;
 }
 
 .Code-Example-Title {
   font-style: normal;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 110%;
   line-height: 27px;
   color: #ffffff;
   height: 20px;
@@ -510,7 +514,6 @@ pre {
 }
 
 .Code-Text {
-  font-size: 12px;
   text-align: left;
 }
 
@@ -531,7 +534,7 @@ pre {
 .Soft-Skills-title {
   font-style: normal;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 155%;
   line-height: 27px;
   color: #ffffff;
   margin-bottom: 0px;
@@ -551,63 +554,59 @@ pre {
 .Soft-Skills-item {
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 100%;
   line-height: 24px;
   color: #ffffff;
 }
 
 /* Footer-section */
 .Footer-section {
-  width: inherit;
+  width: 100%;
   position: relative;
   background-color: inherit;
-  text-align: center;
-  font-family: "Montserrat";
-
-  color: blue;
-  box-shadow: 1.5px 1.5px 7px rgba(0, 0, 0, 0.45);
-  display: flex;
-  justify-items: center;
-  align-items: center;
+  /* box-shadow: 1.5px 1.5px 7px rgba(0, 0, 0, 0.45); */
   display: flex;
   flex-direction: row;
-  column-gap: 5px;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: space-between;
 }
-/*padding-left: 91px;
-padding-right: 66px; */
 
 .Footer-text {
   color: #1a75ffec;
-  text-underline-position: above;
   text-decoration: none;
-  font-family: sans-serif;
+}
+
+.RS-School-section {
+  width: 8%;
 }
 
 .Github-section {
-  vertical-align: middle;
-
-  justify-content: center;
-  align-items: center;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  width: 15%;
 }
 
 .Github-logo {
+  text-decoration: none;
+  color: #63676dec;
+  width: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  text-decoration: none;
   color: #1a75ffec;
+}
+
+.Github-logo-image {
+  text-decoration: none;
+  width: 20%;
 }
 
 .Codewars-section {
   width: 26%;
-  height: 35px;
   background-image: url(https://www.codewars.com/users/Stellarator85/badges/large/);
   background-size: 100% 200%;
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
-
-  /* justify-self: center;  */
 }
