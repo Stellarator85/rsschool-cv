@@ -1,3 +1,5 @@
+var burgerMenuButton = document.getElementById("Burger-menu");
+
 burgerMenuButton.addEventListener("mouseenter", function () {
   if (burgerMenuButton.classList.contains("Burger-menu-container"))
     return (
