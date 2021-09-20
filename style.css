@@ -427,6 +427,14 @@ My-Work-Experience-position {
 }
 
 /* "Contacts"-section */
+
+.Contacts-list {
+  margin-top: 0px;
+}
+.Contacts-list-item {
+  color: #fb6d3a;
+  list-style: none;
+}
 .Contact-Type {
   font-style: normal;
   font-weight: bold;
