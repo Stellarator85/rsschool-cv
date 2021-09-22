@@ -1,44 +1,69 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tymur Shcherbyna Curriculum Vitae</title>
+    <title>CV</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
+    />
   </head>
-  <body>
+  <body id="top">
     <!--Main section-->
-    <div class="Main-section">
+    <main class="Main-section">
+      <!--Burger-menu section-->
+      <div id="Burger-menu" class="Burger-menu-container">
+        <div class="Burger-menu-icon-1">
+          <svg viewBox="0 0 32 32" preserveAspectRatio="none">
+            <path
+              d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"
+              style="fill: #fff"
+            />
+          </svg>
+        </div>
+      </div>
+      <script src="script.js"></script>
       <!--Main content section-->
-      <div class="Main-Content-section">
-        <div class="About-Me-section">
-          <!--"About Me"-section-->
-          <div>
-            <h1 class="about-me-name">Tymur Shcherbyna</h1>
-            <p class="about-me-russian-name">Тимур Щербина</p>
-            <h3 class="Main-Content-Titles">About Me</h3>
-            <p class="about-me-text">
-              Full Stack Developer Wannabe & IT-Switcher.<br />
-              I am 36 years old.<br />
-              No wife, no kids - got plenty of time to study programming
-              languages, libraries, frameworks, and other necessary
-              IT-technologies.<br />
-              Fluent English speaker & writer since I resided and worked in an
-              english-speaking environment for 5 years. Also have 5 years
-              experience of remote work via the Internet.
-            </p>
-          </div>
+      <div class="Main-content-section">
+        <nav>
+          <span style="color: whitesmoke">|</span>
+          <a class="Top-menu-options-item" href="#about">about</a>
+          <span style="color: whitesmoke">|</span>
+          <a class="Top-menu-options-item" href="#experience">experience</a>
+          <span style="color: whitesmoke">|</span>
+          <a class="Top-menu-options-item" href="#education">education</a>
+          <span style="color: whitesmoke">|</span>
+          <a class="Top-menu-options-item" href="#certificates">certificates</a
+          ><span style="color: whitesmoke">|</span>
+        </nav>
+        <!--"About Me"-section-->
+        <div class="About-me-section">
+          <h1 class="about-me-name">Tymur&nbsp;Shcherbyna</h1>
+          <h2 class="about-me-russian-name">Тимур&nbsp;Щербина</h2>
+          <h3 class="Main-Content-Titles" id="about">- About Me -</h3>
+          <p class="about-me-text">
+            Full Stack Developer Wannabe & IT-Switcher.<br />
+            I am 36 years old.<br />
+            Ready and willing to study programming languages, libraries,
+            frameworks, and other necessary IT-technologies.<br />
+            Fluent English speaker & writer since I resided and worked in an
+            english-speaking environment for 5 years. Also have 5 years
+            experience of remote work via the Internet.
+          </p>
         </div>
         <!--"My Work Experience"-section-->
         <div class="My-Work-Experience-section">
-          <h3 class="Main-Content-Titles">Work Experience</h3>
-
+          <h3 class="Main-Content-Titles" id="experience">
+            - Work Experience -
+          </h3>
           <!--Company#1-->
           <div class="My-Work-Experience-company">
             <h4 class="My-Work-Experience-position">
@@ -51,7 +76,6 @@
               March 2009 - December 2013
               <span class="My-Work-Experience-devider">|</span> OH, USA
             </p>
-
             <ul class="My-Work-Experience-duties">
               <li class="My-Work-Experience-duties-item">
                 Meet & greet customers.
@@ -65,7 +89,6 @@
               </li>
             </ul>
           </div>
-
           <!--Company#2-->
           <div class="My-Work-Experience-company">
             <h4 class="My-Work-Experience-position">
@@ -101,7 +124,7 @@
 
         <!--"My Education"-section-->
         <div class="My-education-section">
-          <h3 class="Main-Content-Titles">Education</h3>
+          <h3 class="Main-Content-Titles" id="education">- Education -</h3>
           <!--College/School#1-->
           <div>
             <h4 class="My-Education-college">Cherkasy National University</h4>
@@ -113,58 +136,151 @@
             </p>
           </div>
         </div>
+        <!--"Courses Certificates"-section-->
+        <div class="My-education-section">
+          <h3 class="Main-Content-Titles" id="certificates">
+            - IT Courses&nbsp;&&nbsp;Certificates -
+          </h3>
+          <h4 class="My-Work-Experience-position">
+            JavaScript/Front-end. Stage0
+            <span class="My-Work-Experience-employer">RS School</span>
+          </h4>
+          <p class="Education-period">
+            July - September 2021
+            <span class="My-Education-period-devider">|</span> Online
+          </p>
+          <a href="https://app.rs.school/certificate/zyp2vxgr" target="_blank"
+            ><img
+              src="https://i.ibb.co/BGYbDfq/RS-certificate-mini.png"
+              alt="RS-certificate"
+          /></a>
+
+          <h4 class="My-Work-Experience-position">
+            English HTML
+            <span class="My-Work-Experience-employer">GoIT-School</span>
+          </h4>
+          <p class="Education-period">
+            May 2021
+            <span class="My-Education-period-devider">|</span> Online
+          </p>
+          <a href="https://ibb.co/B2PX4S2" target="_blank"
+            ><img
+              src="https://i.ibb.co/rxv1wv1/Go-IT-certificate-mini.png"
+              alt="Go-IT-certificate"
+          /></a>
+        </div>
+        <div class="My-education-section">
+          <h3 class="Main-Content-Titles" id="certificates">
+            - Portfolio/Projects Done -
+          </h3>
+          <h4 class="My-Work-Experience-position">
+            Custom Video Player
+            <span class="My-Work-Experience-employer"></span>
+          </h4>
+          <a href="https://stellarator85.github.io/custom-video-player/" target="_blank">
+            <img src="https://i.ibb.co/VTDzSVf/custom-video-player.png" alt="Custom-Video-Player" width="30%"></a>
+        </div>
+
+          <h4 class="My-Work-Experience-position">
+            Drum-Kit Sound-Machine
+            <span class="My-Work-Experience-employer">Interactive Web-Site</span>
+          </h4>
+          <a href="https://stellarator85.github.io/drum-kit1/" target="_blank"
+            ><img src="https://i.ibb.co/fC7LYjt/drum-kit.png" alt="Drum-Kit" width="30%">
+              
+          </a>
+        
+          <h4 class="My-Work-Experience-position">
+            Louvre Museum Website
+            <span class="My-Work-Experience-employer">Static Layout</span>
+          </h4>
+          <a href="https://stellarator85.github.io/museum/" target="_blank"
+            ><img
+              src="https://i.ibb.co/3RxhTK4/2209.png"
+              alt="Louvre Museum Website" width="30%"
+            />
+          </a>
+          </div>
+        <!--  <div>
+          <h3 class="Sidebar-Title">Courses & Certificates</h3>
+
+          <ul class="Tech-Interests-list">
+            <li class="Tech-Skills-content">
+              <span class="Tech-Skills-item"
+                >RS-School<br />"JavaScript/Front-end. Stage0"-course(2021)<br /><a
+                  href="https://app.rs.school/certificate/zyp2vxgr"
+                  target="_blank"
+                  ><span class="Certificate-text">See the certificate</span></a
+                ></span
+              >
+            </li>
+            <li class="Tech-Skills-content">
+              <span class="Tech-Skills-item"
+                >GoIT-School<br />"English HTML"-course(2021)<br /><a
+                  href="https://ibb.co/B2PX4S2"
+                  target="_blank"
+                  ><span class="Certificate-text">See the certificate</span></a
+                ></span
+              >
+            </li>
+          </ul>
+          <a href="https://ibb.co/B2PX4S2" target="_blank"
+            ><img
+              src="https://i.ibb.co/B2PX4S2/certificate.png"
+              alt="certificate"
+              border="0"
+          /></a>
+        </div> -->
       </div>
       <!--Sidebar-section-->
       <aside class="Sidebar-section">
-        <img src="photo.jpg" class="My-Photo" alt="Tymur Shcherbyna">
+        <img src="photo.jpg" class="My-Photo" alt="Tymur Shcherbyna" />
         <!--"Location"-section-->
-        <div class="Contacts-section">
-          <h3 class="Location-Title">Location</h3>
-          <div>
-            <span class="Contact-Type">City: </span
-            ><span class="Soft-Skills-item">Cherkasy</span>
-            <a href="tel:+380688037148" class="Contact-Content"></a>
-          </div>
-          <div>
-            <span class="Contact-Type">Country: </span
-            ><span class="Soft-Skills-item">Ukraine</span>
-            <a
-              href="mailto:stellarator85@gmail.com"
-              class="Contact-Content"
-            ></a>
-          </div>
+        <div class="Location-section">
+          <ul class="Location-section-list">
+            <li class="Location-list-item">
+              <h3 class="Sidebar-Title">Location</h3>
+            </li>
+            <li class="Location-list-item">
+              <span class="Contact-Type">City: </span
+              ><span class="Location-item">Cherkasy</span>
+            </li>
+            <li class="Location-list-item">
+              <span class="Contact-Type">Country: </span
+              ><span class="Location-item">Ukraine</span>
+            </li>
+          </ul>
         </div>
         <!--"Contacts"-section-->
-        <div class="Contacts-section">
-          <h3 class="Sidebar-Title">Contacts</h3>
-          <div>
-            <span class="Contact-Type">Phone:</span>
-            <a href="tel:+380688037148" class="Contact-Content"
-              >+38 (068) 803-7148</a
-            >
-          </div>
-          <div>
-            <span class="Contact-Type">E-mail:</span>
-            <a href="mailto:stellarator85@gmail.com" class="Contact-Content"
-              >stellarator85@gmail.com</a
-            >
-          </div>
-          <div>
-            <span class="Contact-Type">GitHub Username:</span>
-            <a href="https://github.com/Stellarator85" class="Contact-Content"
-              >Stellarator85</a
-            >
-          </div>
-          <div>
-            <span class="Contact-Type">Discord Username:</span>
-            <span class="Contact-Content">Stellarator85</span>
-          </div>
+        <div class="Contacts-section" id="contacts">
+          <ul class="Contacts-list">
+            <li class="Contacts-list-item">
+              <h3 class="Sidebar-Title">Contacts</h3>
+            </li>
+            <li class="Contacts-list-item">
+              <span class="Contact-Type">Phone:</span>
+              <a href="tel:+380688037148" class="Contact-Content"
+                >+38 (068) 803-7148</a
+              >
+            </li>
+            <li class="Contacts-list-item">
+              <span class="Contact-Type">E-mail:</span>
+              <a href="mailto:stellarator85@gmail.com" class="Contact-Content"
+                >stellarator85@gmail.com</a
+              >
+            </li>
+            <li class="Contacts-list-item">
+              <span class="Contact-Type">Discord Username:</span>
+              <span class="Contact-Content">Stellarator85#0399</span>
+            </li>
+          </ul>
         </div>
-
         <!--"Tech Skills"-section-->
         <div class="Tech-Skills-section">
-          <h3 class="Sidebar-Title">Tech Skills & Interests</h3>
           <ul class="Tech-Interests-list">
+            <li class="Tech-Skills-List-Title">
+              <h3 class="Sidebar-Title">Tech Skills & Interests</h3>
+            </li>
             <li class="Tech-Skills-content">
               <span class="Tech-Skills-item"
                 >HTML5...............................Junior level</span
@@ -172,17 +288,22 @@
             </li>
             <li class="Tech-Skills-content">
               <span class="Tech-Skills-item"
-                >CSS3....................................Junior level</span
+                >CSS3...................................Junior level</span
               >
             </li>
             <li class="Tech-Skills-content">
               <span class="Tech-Skills-item"
-                >GIT........................................Junior level</span
+                >GIT.......................................Junior level</span
               >
             </li>
             <li class="Tech-Skills-content">
               <span class="Tech-Skills-item"
-                >JavaScript...............Pre-junior level</span
+                >JavaScript........................Junior level</span
+              >
+            </li>
+            <li class="Tech-Skills-content">
+              <span class="Tech-Skills-item"
+                >Node.js..............................Junior level</span
               >
             </li>
             <li class="Tech-Skills-content">
@@ -190,18 +311,490 @@
                 >React.js.....................Pre-junior level</span
               >
             </li>
-            <li class="Tech-Skills-content">
-              <span class="Tech-Skills-item"
-                >Node.js......................Pre-junior level</span
-              >
+            <li class="Code-item">
+              <details id="code">
+                <summary>
+                  <span class="Code-Example-Title"
+                    >JS-сode example(click to see)</span
+                  >
+                </summary>
+                <pre
+                  style="color: #d1d1d1"
+                ><span style="color:#9999a9; ">/* Project: Designing a custom videoplayer.</span>
+<span style="color:#9999a9; "></span>
+<span style="color:#9999a9; ">Result you can find @ shorturl.at/fiuAT */</span>
+
+<span style="color:#9999a9; ">/* Именование html/css-элементов */</span>
+
+<span style="color:#e66170; font-weight:bold; ">const</span> video <span style="color:#d2cd86; ">=</span> document<span style="color:#d2cd86; ">.</span>getElementById<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">video1</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+
+сonst videoPlaySymbol <span style="color:#d2cd86; ">=</span> document<span style="color:#d2cd86; ">.</span>getElementById
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-play-symbol</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+
+<span style="color:#e66170; font-weight:bold; ">const</span> playButton <span style="color:#d2cd86; ">=</span> document<span style="color:#d2cd86; ">.</span>getElementsByClassName
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-controls-panel-play-button</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">[</span><span style="color:#008c00; ">0</span><span style="color:#d2cd86; ">]</span><span style="color:#b060b0; ">;</span>
+
+<span style="color:#e66170; font-weight:bold; ">const</span> volumeButton <span style="color:#d2cd86; ">=</span> document<span style="color:#d2cd86; ">.</span>getElementsByClassName
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-player-controls-button-volume</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">[</span><span style="color:#008c00; ">0</span><span style="color:#d2cd86; ">]</span><span style="color:#b060b0; ">;</span>
+
+<span style="color:#e66170; font-weight:bold; ">const</span> progress <span style="color:#d2cd86; ">=</span> document<span style="color:#d2cd86; ">.</span>getElementById<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">progress</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+
+<span style="color:#e66170; font-weight:bold; ">const</span> progres <span style="color:#d2cd86; ">=</span> document<span style="color:#d2cd86; ">.</span>getElementById<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">progres</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+
+<span style="color:#9999a9; ">/* Убрать звук при нажатии клавиши "M" или при клике</span>
+<span style="color:#9999a9; ">на кнопку "Звук". */</span>
+
+document<span style="color:#d2cd86; ">.</span>addEventListener<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">keydown</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">,</span><span style="color:#e66170; font-weight:bold; ">function</span><span style="color:#d2cd86; ">(</span>event<span style="color:#d2cd86; ">)</span> <span style="color:#b060b0; ">{</span>
+<span style="color:#e66170; font-weight:bold; ">if</span> <span style="color:#d2cd86; ">(</span>
+event<span style="color:#d2cd86; ">.</span>code <span style="color:#d2cd86; ">===</span> <span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">KeyM</span><span style="color:#02d045; ">"</span> <span style="color:#d2cd86; ">&amp;&amp;</span>
+ volumeButton<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span><span style="color:#e66170; font-weight:bold; ">contains</span>
+ <span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-player-controls-button-volume</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span>
+<span style="color:#d2cd86; ">)</span>
+<span style="color:#e66170; font-weight:bold; ">return</span> <span style="color:#d2cd86; ">(</span>
+<span style="color:#d2cd86; ">(</span>video<span style="color:#d2cd86; ">.</span>muted <span style="color:#d2cd86; ">=</span> <span style="color:#0f4d75; ">true</span><span style="color:#d2cd86; ">)</span> <span style="color:#d2cd86; ">+</span>
+ volumeButton<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>remove
+ <span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-player-controls-button-volume</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span> <span style="color:#d2cd86; ">+</span>
+volumeButton<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>add
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-player-controls-button-volume-muted</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span>
+  <span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+  <span style="color:#e66170; font-weight:bold; ">else</span> <span style="color:#e66170; font-weight:bold; ">if</span> <span style="color:#d2cd86; ">(</span>
+    event<span style="color:#d2cd86; ">.</span>code <span style="color:#d2cd86; ">===</span> <span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">KeyM</span><span style="color:#02d045; ">"</span> <span style="color:#d2cd86; ">&amp;&amp;</span>
+    volumeButton<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span><span style="color:#e66170; font-weight:bold; ">contains</span>
+    <span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-player-controls-button-volume-muted</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span>
+  <span style="color:#d2cd86; ">)</span>
+    <span style="color:#e66170; font-weight:bold; ">return</span> <span style="color:#d2cd86; ">(</span>
+      <span style="color:#d2cd86; ">(</span>video<span style="color:#d2cd86; ">.</span>muted <span style="color:#d2cd86; ">=</span> <span style="color:#0f4d75; ">false</span><span style="color:#d2cd86; ">)</span> <span style="color:#d2cd86; ">+</span>
+      volumeButton<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>remove<span style="color:#d2cd86; ">(</span>
+      <span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-player-controls-button-volume-muted</span><span style="color:#02d045; ">"</span>
+      <span style="color:#d2cd86; ">)</span> <span style="color:#d2cd86; ">+</span>
+      volumeButton<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>add
+      <span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-player-controls-button-volume</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span>
+    <span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+<span style="color:#b060b0; ">}</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+
+volumeButton<span style="color:#d2cd86; ">.</span>addEventListener<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">click</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">,</span><span style="color:#e66170; font-weight:bold; ">function</span><span style="color:#d2cd86; ">(</span>event<span style="color:#d2cd86; ">)</span> <span style="color:#b060b0; ">{</span>
+  <span style="color:#e66170; font-weight:bold; ">if</span> <span style="color:#d2cd86; ">(</span>
+    event<span style="color:#d2cd86; ">.</span>which <span style="color:#d2cd86; ">===</span> <span style="color:#008c00; ">1</span> <span style="color:#d2cd86; ">&amp;&amp;</span>
+    volumeButton<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span><span style="color:#e66170; font-weight:bold; ">contains</span>
+    <span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-player-controls-button-volume</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span>
+  <span style="color:#d2cd86; ">)</span>
+    <span style="color:#e66170; font-weight:bold; ">return</span> <span style="color:#d2cd86; ">(</span>
+      <span style="color:#d2cd86; ">(</span>video<span style="color:#d2cd86; ">.</span>muted <span style="color:#d2cd86; ">=</span> <span style="color:#0f4d75; ">true</span><span style="color:#d2cd86; ">)</span> <span style="color:#d2cd86; ">+</span>
+      volumeButton<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>remove
+      <span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-player-controls-button-volume</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span> <span style="color:#d2cd86; ">+</span>
+      volumeButton<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>add
+      <span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-player-controls-button-volume-muted</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span>
+    <span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+  <span style="color:#e66170; font-weight:bold; ">else</span> <span style="color:#e66170; font-weight:bold; ">if</span> <span style="color:#d2cd86; ">(</span>
+    event<span style="color:#d2cd86; ">.</span>which <span style="color:#d2cd86; ">===</span> <span style="color:#008c00; ">1</span> <span style="color:#d2cd86; ">&amp;&amp;</span>
+    volumeButton<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span><span style="color:#e66170; font-weight:bold; ">contains</span>
+    <span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-player-controls-button-volume-muted</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span>
+  <span style="color:#d2cd86; ">)</span>
+    <span style="color:#e66170; font-weight:bold; ">return</span> <span style="color:#d2cd86; ">(</span>
+      <span style="color:#d2cd86; ">(</span>video<span style="color:#d2cd86; ">.</span>muted <span style="color:#d2cd86; ">=</span> <span style="color:#0f4d75; ">false</span><span style="color:#d2cd86; ">)</span> <span style="color:#d2cd86; ">+</span>
+      volumeButton<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>remove<span style="color:#d2cd86; ">(</span>
+        <span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-player-controls-button-volume-muted</span><span style="color:#02d045; ">"</span>
+      <span style="color:#d2cd86; ">)</span> <span style="color:#d2cd86; ">+</span>
+      volumeButton<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>add
+      <span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-player-controls-button-volume</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span>
+    <span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+<span style="color:#b060b0; ">}</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+
+<span style="color:#9999a9; ">/* Ускорение/замедление проигрывания видео </span>
+<span style="color:#9999a9; ">при нажатии клавиш "влево" или "влево"(они же</span>
+<span style="color:#9999a9; ">"запятая"/"точка"). */</span>
+
+document<span style="color:#d2cd86; ">.</span>addEventListener<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">keydown</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">,</span> <span style="color:#e66170; font-weight:bold; ">function</span><span style="color:#d2cd86; ">(</span>event<span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">{</span>
+  <span style="color:#e66170; font-weight:bold; ">if</span> <span style="color:#d2cd86; ">(</span>event<span style="color:#d2cd86; ">.</span>code <span style="color:#d2cd86; ">===</span> <span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">ArrowLeft</span><span style="color:#02d045; ">"</span> 
+  <span style="color:#d2cd86; ">&amp;&amp;</span> video<span style="color:#d2cd86; ">.</span>playbackRate <span style="color:#d2cd86; ">===</span> <span style="color:#009f00; ">1.0</span><span style="color:#d2cd86; ">)</span>
+    <span style="color:#e66170; font-weight:bold; ">return</span> <span style="color:#d2cd86; ">(</span>video<span style="color:#d2cd86; ">.</span>playbackRate <span style="color:#d2cd86; ">=</span> <span style="color:#009f00; ">0.25</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+  <span style="color:#e66170; font-weight:bold; ">else</span> <span style="color:#e66170; font-weight:bold; ">if</span> <span style="color:#d2cd86; ">(</span>event<span style="color:#d2cd86; ">.</span>code <span style="color:#d2cd86; ">===</span> <span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">ArrowLeft</span><span style="color:#02d045; ">"</span> 
+  <span style="color:#d2cd86; ">&amp;&amp;</span> video<span style="color:#d2cd86; ">.</span>playbackRate <span style="color:#d2cd86; ">===</span> <span style="color:#009f00; ">0.25</span><span style="color:#d2cd86; ">)</span>
+    <span style="color:#e66170; font-weight:bold; ">return</span> <span style="color:#d2cd86; ">(</span>video<span style="color:#d2cd86; ">.</span>playbackRate <span style="color:#d2cd86; ">=</span> <span style="color:#009f00; ">1.0</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+<span style="color:#b060b0; ">}</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+
+document<span style="color:#d2cd86; ">.</span>addEventListener<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">keydown</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">,</span> <span style="color:#e66170; font-weight:bold; ">function</span><span style="color:#d2cd86; ">(</span>event<span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">{</span>
+  <span style="color:#e66170; font-weight:bold; ">if</span> <span style="color:#d2cd86; ">(</span>event<span style="color:#d2cd86; ">.</span>code <span style="color:#d2cd86; ">===</span> <span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">ArrowRight</span><span style="color:#02d045; ">"</span>
+  <span style="color:#d2cd86; ">&amp;&amp;</span> video<span style="color:#d2cd86; ">.</span>playbackRate <span style="color:#d2cd86; ">===</span> <span style="color:#009f00; ">1.0</span><span style="color:#d2cd86; ">)</span>
+    <span style="color:#e66170; font-weight:bold; ">return</span> <span style="color:#d2cd86; ">(</span>video<span style="color:#d2cd86; ">.</span>playbackRate <span style="color:#d2cd86; ">=</span> <span style="color:#009f00; ">3.0</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+  <span style="color:#e66170; font-weight:bold; ">else</span> <span style="color:#e66170; font-weight:bold; ">if</span> <span style="color:#d2cd86; ">(</span>event<span style="color:#d2cd86; ">.</span>code <span style="color:#d2cd86; ">===</span> <span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">ArrowRight</span><span style="color:#02d045; ">"</span> 
+  <span style="color:#d2cd86; ">&amp;&amp;</span> video<span style="color:#d2cd86; ">.</span>playbackRate <span style="color:#d2cd86; ">===</span> <span style="color:#009f00; ">3.0</span><span style="color:#d2cd86; ">)</span>
+    <span style="color:#e66170; font-weight:bold; ">return</span> <span style="color:#d2cd86; ">(</span>video<span style="color:#d2cd86; ">.</span>playbackRate <span style="color:#d2cd86; ">=</span> <span style="color:#009f00; ">1.0</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+<span style="color:#b060b0; ">}</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+
+<span style="color:#9999a9; ">/* Изменение цвета шкалы прогресса видео </span>
+<span style="color:#9999a9; ">при манипуляции с ползунком. */</span>
+
+progress<span style="color:#d2cd86; ">.</span>addEventListener<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">input</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">,</span><span style="color:#e66170; font-weight:bold; ">function</span><span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">{</span>
+  progress<span style="color:#d2cd86; ">.</span>style<span style="color:#d2cd86; ">.</span>background <span style="color:#d2cd86; ">=</span> 
+<span style="color:#02d045; ">`</span><span style="color:#00c4c4; ">linear-gradient(to right, #82CFD0 0%,</span>
+<span style="color:#00c4c4; ">#82CFD0 </span><span style="color:#02d045; ">${</span><span style="color:#00c4c4; ">progress</span><span style="color:#d2cd86; ">.</span><span style="color:#00c4c4; ">value</span><span style="color:#02d045; ">}</span><span style="color:#00c4c4; ">%, </span>
+<span style="color:#00c4c4; ">&nbsp;&nbsp;#fff </span><span style="color:#02d045; ">${</span><span style="color:#00c4c4; ">progress</span><span style="color:#d2cd86; ">.</span><span style="color:#00c4c4; ">value</span><span style="color:#02d045; ">}</span><span style="color:#00c4c4; ">%, white 100%)</span><span style="color:#02d045; ">`</span><span style="color:#b060b0; ">;</span>
+<span style="color:#b060b0; ">}</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+
+<span style="color:#e66170; font-weight:bold; ">function</span> getProgre<span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span> <span style="color:#b060b0; ">{</span>
+  progress<span style="color:#d2cd86; ">.</span><span style="color:#e66170; font-weight:bold; ">max</span> <span style="color:#d2cd86; ">=</span> video<span style="color:#d2cd86; ">.</span>duration<span style="color:#b060b0; ">;</span>
+  progress<span style="color:#d2cd86; ">.</span>value <span style="color:#d2cd86; ">=</span> video<span style="color:#d2cd86; ">.</span>currentTime<span style="color:#b060b0; ">;</span>
+  <span style="color:#e66170; font-weight:bold; ">setTimeout</span><span style="color:#d2cd86; ">(</span>getProgre<span style="color:#d2cd86; ">,</span> <span style="color:#008c00; ">0</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+<span style="color:#b060b0; ">}</span>
+getProgre<span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+
+<span style="color:#9999a9; ">/* Шкала регулировки громкости.*/</span>
+
+progres<span style="color:#d2cd86; ">.</span>addEventListener<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">input</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">,</span><span style="color:#e66170; font-weight:bold; ">function</span><span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">{</span>
+<span style="color:#e66170; font-weight:bold; ">let</span> theValue <span style="color:#d2cd86; ">=</span> <span style="color:#e66170; font-weight:bold; ">this</span><span style="color:#d2cd86; ">.</span>value<span style="color:#b060b0; ">;</span>
+video<span style="color:#d2cd86; ">.</span>volume <span style="color:#d2cd86; ">=</span> progres<span style="color:#d2cd86; ">.</span>value <span style="color:#d2cd86; ">/</span> <span style="color:#008c00; ">100</span><span style="color:#b060b0; ">;</span>
+<span style="color:#e66170; font-weight:bold; ">this</span><span style="color:#d2cd86; ">.</span>style<span style="color:#d2cd86; ">.</span>background <span style="color:#d2cd86; ">=</span> <span style="color:#02d045; ">`</span><span style="color:#00c4c4; ">linear-gradient</span>
+<span style="color:#00c4c4; ">(to right, #82CFD0 0%, </span>
+<span style="color:#00c4c4; ">#82CFD0 </span><span style="color:#02d045; ">${</span><span style="color:#00c4c4; ">theValue</span><span style="color:#02d045; ">}</span><span style="color:#00c4c4; ">%, #fff </span><span style="color:#02d045; ">${</span><span style="color:#00c4c4; ">theValue</span><span style="color:#02d045; ">}</span><span style="color:#00c4c4; ">%, white 100%)</span><span style="color:#02d045; ">`</span><span style="color:#b060b0; ">;</span>
+<span style="color:#e66170; font-weight:bold; ">if</span> <span style="color:#d2cd86; ">(</span>progres<span style="color:#d2cd86; ">.</span>value <span style="color:#d2cd86; ">===</span> progres<span style="color:#d2cd86; ">.</span><span style="color:#e66170; font-weight:bold; ">min</span><span style="color:#d2cd86; ">)</span>
+<span style="color:#e66170; font-weight:bold; ">return</span> <span style="color:#d2cd86; ">(</span>
+  volumeButton<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>remove
+  <span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-player-controls-button-volume</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span> <span style="color:#d2cd86; ">+</span>
+  volumeButton<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>add
+  <span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-player-controls-button-volume-muted</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span>
+    <span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+  <span style="color:#e66170; font-weight:bold; ">else</span>
+    <span style="color:#e66170; font-weight:bold; ">return</span> <span style="color:#d2cd86; ">(</span>
+      volumeButton<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>remove<span style="color:#d2cd86; ">(</span>
+        <span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-player-controls-button-volume-muted</span><span style="color:#02d045; ">"</span>
+      <span style="color:#d2cd86; ">)</span> <span style="color:#d2cd86; ">+</span> volumeButton<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>add
+      <span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-player-controls-button-volume</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span>
+    <span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+<span style="color:#b060b0; ">}</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+
+<span style="color:#9999a9; ">/* Переход/выход в/из режим "Полный экран". */</span>
+
+document<span style="color:#d2cd86; ">.</span>addEventListener<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">keydown</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">,</span><span style="color:#e66170; font-weight:bold; ">function</span><span style="color:#d2cd86; ">(</span>event<span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">{</span>
+<span style="color:#e66170; font-weight:bold; ">if</span> <span style="color:#d2cd86; ">(</span>document<span style="color:#d2cd86; ">.</span>fullscreenElement <span style="color:#d2cd86; ">===</span> video
+<span style="color:#d2cd86; ">&amp;&amp;</span> event<span style="color:#d2cd86; ">.</span>code <span style="color:#d2cd86; ">===</span> <span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">KeyF</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span>
+<span style="color:#e66170; font-weight:bold; ">return</span> document<span style="color:#d2cd86; ">.</span>exitFullscreen<span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+<span style="color:#e66170; font-weight:bold; ">else</span> <span style="color:#e66170; font-weight:bold; ">if</span> <span style="color:#d2cd86; ">(</span>event<span style="color:#d2cd86; ">.</span>code <span style="color:#d2cd86; ">===</span> <span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">KeyF</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span>
+<span style="color:#e66170; font-weight:bold; ">return</span> video<span style="color:#d2cd86; ">.</span>requestFullscreen<span style="color:#d2cd86; ">(</span><span style="color:#b060b0; ">{</span>navigationUI<span style="color:#b060b0; ">:</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">hide</span><span style="color:#02d045; ">"</span><span style="color:#b060b0; ">}</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+<span style="color:#b060b0; ">}</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+
+<span style="color:#9999a9; ">/* Проигрывание после нажатия кнопки "Play" </span>
+<span style="color:#9999a9; ">на панели управления.*/</span>
+
+playButton<span style="color:#d2cd86; ">.</span>addEventListener<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">click</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">,</span><span style="color:#e66170; font-weight:bold; ">function</span><span style="color:#d2cd86; ">(</span>event<span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">{</span>
+<span style="color:#e66170; font-weight:bold; ">if</span> <span style="color:#d2cd86; ">(</span>
+event<span style="color:#d2cd86; ">.</span>which <span style="color:#d2cd86; ">===</span> <span style="color:#008c00; ">1</span> <span style="color:#d2cd86; ">&amp;&amp;</span>
+videoPlaySymbol<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span><span style="color:#e66170; font-weight:bold; ">contains</span><span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-play-symbol</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span>
+<span style="color:#d2cd86; ">)</span>
+<span style="color:#e66170; font-weight:bold; ">return</span> <span style="color:#d2cd86; ">(</span>
+video<span style="color:#d2cd86; ">.</span>play<span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span> <span style="color:#d2cd86; ">+</span>
+playButton<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>remove
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-controls-panel-play-button</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">+</span>
+playButton<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>add
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-controls-panel-pause-button</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">+</span>
+videoPlaySymbol<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>remove
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-play-symbol</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">+</span>
+videoPlaySymbol<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>add
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-play-symbol-fade</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span>
+<span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+<span style="color:#e66170; font-weight:bold; ">else</span> <span style="color:#e66170; font-weight:bold; ">if</span> <span style="color:#d2cd86; ">(</span>
+event<span style="color:#d2cd86; ">.</span>which <span style="color:#d2cd86; ">===</span> <span style="color:#008c00; ">1</span> <span style="color:#d2cd86; ">&amp;&amp;</span>
+videoPlaySymbol<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span><span style="color:#e66170; font-weight:bold; ">contains</span>
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-play-symbol-fade</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span>
+  <span style="color:#d2cd86; ">)</span>
+  <span style="color:#e66170; font-weight:bold; ">return</span> <span style="color:#d2cd86; ">(</span>
+  video<span style="color:#d2cd86; ">.</span>pause<span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span> <span style="color:#d2cd86; ">+</span>
+playButton<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>remove
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-controls-panel-pause-button</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">+</span>
+playButton<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>add
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-controls-panel-play-button</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">+</span>
+videoPlaySymbol<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>remove
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-play-symbol-fade</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">+</span>
+videoPlaySymbol<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>add
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-play-symbol</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span>
+    <span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+<span style="color:#b060b0; ">}</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+
+<span style="color:#9999a9; ">/* Переход в полноэкранный режим после </span>
+<span style="color:#9999a9; ">нажатия кнопки "Full Screen" на панели управления.*/</span>
+
+document
+<span style="color:#d2cd86; ">.</span>getElementsByClassName
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-controls-panel-button</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">[</span><span style="color:#008c00; ">2</span><span style="color:#d2cd86; ">]</span>
+<span style="color:#d2cd86; ">.</span>addEventListener<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">click</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">,</span> <span style="color:#e66170; font-weight:bold; ">function</span> <span style="color:#d2cd86; ">(</span>e<span style="color:#d2cd86; ">)</span> <span style="color:#b060b0; ">{</span>
+<span style="color:#e66170; font-weight:bold; ">if</span> <span style="color:#d2cd86; ">(</span>e<span style="color:#d2cd86; ">.</span>which <span style="color:#d2cd86; ">===</span> <span style="color:#008c00; ">1</span><span style="color:#d2cd86; ">)</span> 
+<span style="color:#e66170; font-weight:bold; ">return</span> video<span style="color:#d2cd86; ">.</span>requestFullscreen<span style="color:#d2cd86; ">(</span><span style="color:#b060b0; ">{</span>navigationUI<span style="color:#b060b0; ">:</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">hide</span><span style="color:#02d045; ">"</span><span style="color:#b060b0; ">}</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+  <span style="color:#b060b0; ">}</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+
+<span style="color:#9999a9; ">/* Воспроизведение видео после нажатия </span>
+<span style="color:#9999a9; ">символа Play на дисплее. */</span>
+
+videoPlaySymbol<span style="color:#d2cd86; ">.</span>addEventListener
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">click</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">,</span><span style="color:#e66170; font-weight:bold; ">function</span><span style="color:#d2cd86; ">(</span>event<span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">{</span>
+  <span style="color:#e66170; font-weight:bold; ">if</span> <span style="color:#d2cd86; ">(</span>
+    event<span style="color:#d2cd86; ">.</span>which <span style="color:#d2cd86; ">===</span> <span style="color:#008c00; ">1</span> <span style="color:#d2cd86; ">&amp;&amp;</span>
+    videoPlaySymbol<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span><span style="color:#e66170; font-weight:bold; ">contains</span>
+    <span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-play-symbol</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span>
+  <span style="color:#d2cd86; ">)</span>
+<span style="color:#e66170; font-weight:bold; ">return</span> <span style="color:#d2cd86; ">(</span>
+video<span style="color:#d2cd86; ">.</span>play<span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span> <span style="color:#d2cd86; ">+</span>
+playButton<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>remove
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-controls-panel-play-button</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">+</span>
+playButton<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>add
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-controls-panel-pause-button</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">+</span>
+videoPlaySymbol<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>remove
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-play-symbol</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">+</span>
+videoPlaySymbol<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>add
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-play-symbol-fade</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span>
+    <span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+  <span style="color:#e66170; font-weight:bold; ">else</span> <span style="color:#e66170; font-weight:bold; ">if</span> <span style="color:#d2cd86; ">(</span>
+    event<span style="color:#d2cd86; ">.</span>which <span style="color:#d2cd86; ">===</span> <span style="color:#008c00; ">1</span> <span style="color:#d2cd86; ">&amp;&amp;</span>
+    videoPlaySymbol<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span><span style="color:#e66170; font-weight:bold; ">contains</span>
+    <span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-play-symbol-fade</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span>
+  <span style="color:#d2cd86; ">)</span>
+<span style="color:#e66170; font-weight:bold; ">return</span> <span style="color:#d2cd86; ">(</span>
+video<span style="color:#d2cd86; ">.</span>pause<span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span> <span style="color:#d2cd86; ">+</span>
+videoPlaySymbol<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>add
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-play-symbol</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">+</span>
+videoPlaySymbol<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>remove
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-play-symbol-fade</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">+</span>
+playButton<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>remove
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-controls-panel-pause-button</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">+</span>
+playButton<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>add
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-controls-panel-play-button</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span>
+    <span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+<span style="color:#b060b0; ">}</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+
+<span style="color:#9999a9; ">/* Воспроизведение/пауза видео</span>
+<span style="color:#9999a9; ">после клика на дисплей. */</span>
+
+video<span style="color:#d2cd86; ">.</span>addEventListener<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">click</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">,</span><span style="color:#e66170; font-weight:bold; ">function</span><span style="color:#d2cd86; ">(</span>event<span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">{</span>
+<span style="color:#e66170; font-weight:bold; ">if</span> <span style="color:#d2cd86; ">(</span>
+event<span style="color:#d2cd86; ">.</span>which <span style="color:#d2cd86; ">===</span> <span style="color:#008c00; ">1</span> <span style="color:#d2cd86; ">&amp;&amp;</span>
+videoPlaySymbol<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span><span style="color:#e66170; font-weight:bold; ">contains</span>
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-play-symbol</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span>
+  <span style="color:#d2cd86; ">)</span>
+<span style="color:#e66170; font-weight:bold; ">return</span> <span style="color:#d2cd86; ">(</span>
+video<span style="color:#d2cd86; ">.</span>play<span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span> <span style="color:#d2cd86; ">+</span>
+videoPlaySymbol<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>add
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-play-symbol-fade</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">+</span>
+videoPlaySymbol<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>remove
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-play-symbol</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">+</span>
+playButton<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>add
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-controls-panel-pause-button</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">+</span>
+playButton<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>remove
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-controls-panel-play-button</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span>
+    <span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+  <span style="color:#e66170; font-weight:bold; ">else</span> <span style="color:#e66170; font-weight:bold; ">if</span> <span style="color:#d2cd86; ">(</span>
+    event<span style="color:#d2cd86; ">.</span>which <span style="color:#d2cd86; ">===</span> <span style="color:#008c00; ">1</span> <span style="color:#d2cd86; ">&amp;&amp;</span>
+    videoPlaySymbol<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span><span style="color:#e66170; font-weight:bold; ">contains</span>
+    <span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-play-symbol-fade</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span>
+  <span style="color:#d2cd86; ">)</span>
+<span style="color:#e66170; font-weight:bold; ">return</span> <span style="color:#d2cd86; ">(</span>
+video<span style="color:#d2cd86; ">.</span>pause<span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span> <span style="color:#d2cd86; ">+</span>
+videoPlaySymbol<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>add
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-play-symbol</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">+</span>
+videoPlaySymbol<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>remove
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-play-symbol-fade</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">+</span>
+playButton<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>remove
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-controls-panel-pause-button</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">+</span>
+playButton<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>add
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-controls-panel-play-button</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span>
+    <span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+<span style="color:#b060b0; ">}</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+
+<span style="color:#9999a9; ">/* Воспроизведение/пауза видео </span>
+<span style="color:#9999a9; ">при нажатии пробела. */</span>
+
+document<span style="color:#d2cd86; ">.</span>addEventListener<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">keyup</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">,</span><span style="color:#e66170; font-weight:bold; ">function</span><span style="color:#d2cd86; ">(</span>event<span style="color:#d2cd86; ">)</span> <span style="color:#b060b0; ">{</span>
+<span style="color:#e66170; font-weight:bold; ">if</span> <span style="color:#d2cd86; ">(</span>event<span style="color:#d2cd86; ">.</span>code<span style="color:#d2cd86; ">===</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Space</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">&amp;&amp;</span>video<span style="color:#d2cd86; ">.</span>paused<span style="color:#d2cd86; ">===</span><span style="color:#0f4d75; ">true</span><span style="color:#d2cd86; ">)</span>
+<span style="color:#e66170; font-weight:bold; ">return</span> <span style="color:#d2cd86; ">(</span>
+video<span style="color:#d2cd86; ">.</span>play<span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span> <span style="color:#d2cd86; ">+</span>
+video<span style="color:#d2cd86; ">.</span>removeAttribute<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">poster</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">+</span>
+playButton<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>remove
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-controls-panel-play-button</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">+</span>
+playButton<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>add
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-controls-panel-pause-button</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">+</span>
+videoPlaySymbol<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>remove
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-play-symbol</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span> <span style="color:#d2cd86; ">+</span>
+videoPlaySymbol<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>add
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-play-symbol-fade</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span>
+    <span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+<span style="color:#e66170; font-weight:bold; ">else</span> <span style="color:#e66170; font-weight:bold; ">if</span> <span style="color:#d2cd86; ">(</span>event<span style="color:#d2cd86; ">.</span>code<span style="color:#d2cd86; ">===</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Space</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">&amp;&amp;</span>video<span style="color:#d2cd86; ">.</span>paused<span style="color:#d2cd86; ">===</span><span style="color:#0f4d75; ">false</span><span style="color:#d2cd86; ">)</span>
+    <span style="color:#e66170; font-weight:bold; ">return</span> <span style="color:#d2cd86; ">(</span>
+video<span style="color:#d2cd86; ">.</span>pause<span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span> <span style="color:#d2cd86; ">+</span>
+video<span style="color:#d2cd86; ">.</span>setAttribute
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">poster</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">,</span> <span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">assets/video/poster.jpg</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">+</span>
+playButton<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>remove
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-controls-panel-pause-button</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">+</span>
+playButton<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>add
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-controls-panel-play-button</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">+</span>
+videoPlaySymbol<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>remove
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-play-symbol-fade</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">+</span>
+videoPlaySymbol<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>add
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-play-symbol</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span>
+    <span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+<span style="color:#b060b0; ">}</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+
+<span style="color:#9999a9; ">/* Изменение проирываемого видео-файла</span>
+<span style="color:#9999a9; ">при клике кнопок Назад/Вперед. */</span>
+
+document
+<span style="color:#d2cd86; ">.</span>getElementsByClassName
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-controls-panel-button</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">[</span><span style="color:#008c00; ">0</span><span style="color:#d2cd86; ">]</span>
+<span style="color:#d2cd86; ">.</span>addEventListener<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">click</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">,</span><span style="color:#e66170; font-weight:bold; ">function</span><span style="color:#d2cd86; ">(</span>e<span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">{</span>
+<span style="color:#e66170; font-weight:bold; ">if</span>
+<span style="color:#d2cd86; ">(</span>e<span style="color:#d2cd86; ">.</span>which<span style="color:#d2cd86; ">===</span><span style="color:#008c00; ">1</span>
+<span style="color:#d2cd86; ">&amp;&amp;</span>video<span style="color:#d2cd86; ">.</span>getAttribute<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">src</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span>
+<span style="color:#d2cd86; ">===</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">assets/video/video.mp4</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span>
+<span style="color:#e66170; font-weight:bold; ">return</span> <span style="color:#d2cd86; ">(</span>
+video<span style="color:#d2cd86; ">.</span>pause <span style="color:#d2cd86; ">+</span>
+playButton<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>remove
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-controls-panel-pause-button</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">+</span>
+playButton<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>add<span style="color:#d2cd86; ">(</span>
+  <span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-controls-panel-play-button</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">+</span>
+videoPlaySymbol<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>remove
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-play-symbol-fade</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">+</span>
+videoPlaySymbol<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>add
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-play-symbol</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">+</span>
+video<span style="color:#d2cd86; ">.</span>removeAttribute
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">src</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">,</span> <span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">assets/video/video.mp4</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">+</span>
+video<span style="color:#d2cd86; ">.</span>removeAttribute
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">poster</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">,</span> <span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">assets/video/poster.jpg</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">+</span>
+video<span style="color:#d2cd86; ">.</span>setAttribute
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">src</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">,</span> <span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">assets/video/video2.mp4</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">+</span>
+video<span style="color:#d2cd86; ">.</span>setAttribute
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">poster</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">,</span> <span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">assets/video/poster2.jpg</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span>
+<span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+<span style="color:#e66170; font-weight:bold; ">if</span> <span style="color:#d2cd86; ">(</span>
+e<span style="color:#d2cd86; ">.</span>which <span style="color:#d2cd86; ">===</span> <span style="color:#008c00; ">1</span> <span style="color:#d2cd86; ">&amp;&amp;</span>
+video<span style="color:#d2cd86; ">.</span>getAttribute<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">src</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">===</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">assets/video/video2.mp4</span><span style="color:#02d045; ">"</span>
+ <span style="color:#d2cd86; ">)</span>
+  <span style="color:#e66170; font-weight:bold; ">return</span> <span style="color:#d2cd86; ">(</span>
+video<span style="color:#d2cd86; ">.</span>pause <span style="color:#d2cd86; ">+</span>
+playButton<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>remove
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-controls-panel-pause-button</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">+</span>
+playButton<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>add
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-controls-panel-play-button</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">+</span>
+videoPlaySymbol<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>remove
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-play-symbol-fade</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">+</span>
+videoPlaySymbol<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>add
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-play-symbol</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span> <span style="color:#d2cd86; ">+</span>
+video<span style="color:#d2cd86; ">.</span>removeAttribute
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">src</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">,</span> <span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">assets/video/video2.mp4</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span> <span style="color:#d2cd86; ">+</span>
+video<span style="color:#d2cd86; ">.</span>removeAttribute
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">poster</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">,</span> <span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">assets/video/poster2.jpg</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">+</span>
+video<span style="color:#d2cd86; ">.</span>setAttribute
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">src</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">,</span> <span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">assets/video/video4.mp4</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span> <span style="color:#d2cd86; ">+</span>
+video<span style="color:#d2cd86; ">.</span>setAttribute
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">poster</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">,</span> <span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">assets/video/poster4.png</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span>
+      <span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+<span style="color:#e66170; font-weight:bold; ">else</span> <span style="color:#e66170; font-weight:bold; ">if</span> <span style="color:#d2cd86; ">(</span>
+ e<span style="color:#d2cd86; ">.</span>which <span style="color:#d2cd86; ">===</span> <span style="color:#008c00; ">1</span> <span style="color:#d2cd86; ">&amp;&amp;</span>
+video<span style="color:#d2cd86; ">.</span>getAttribute<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">src</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">===</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">assets/video/video4.mp4</span><span style="color:#02d045; ">"</span>
+    <span style="color:#d2cd86; ">)</span>
+      <span style="color:#e66170; font-weight:bold; ">return</span> <span style="color:#d2cd86; ">(</span>
+video<span style="color:#d2cd86; ">.</span>pause <span style="color:#d2cd86; ">+</span>
+playButton<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>remove
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-controls-panel-pause-button</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span> <span style="color:#d2cd86; ">+</span>
+playButton<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>add
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-controls-panel-play-button</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span> <span style="color:#d2cd86; ">+</span>
+videoPlaySymbol<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>remove
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-play-symbol-fade</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span> <span style="color:#d2cd86; ">+</span>
+videoPlaySymbol<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>add
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-play-symbol</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span> <span style="color:#d2cd86; ">+</span>
+video<span style="color:#d2cd86; ">.</span>removeAttribute
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">src</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">,</span> <span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">assets/video/video4.mp4</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span> <span style="color:#d2cd86; ">+</span>
+video<span style="color:#d2cd86; ">.</span>removeAttribute
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">poster</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">,</span> <span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">assets/video/poster4.png</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span> <span style="color:#d2cd86; ">+</span>
+video<span style="color:#d2cd86; ">.</span>setAttribute
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">src</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">,</span> <span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">assets/video/video.mp4</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span> <span style="color:#d2cd86; ">+</span>
+video<span style="color:#d2cd86; ">.</span>setAttribute
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">poster</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">,</span> <span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">assets/video/poster.jpg</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span>
+      <span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+  <span style="color:#b060b0; ">}</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+
+document
+<span style="color:#d2cd86; ">.</span>getElementsByClassName
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-controls-panel-button</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">[</span><span style="color:#008c00; ">1</span><span style="color:#d2cd86; ">]</span>
+<span style="color:#d2cd86; ">.</span>addEventListener<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">click</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">,</span> <span style="color:#e66170; font-weight:bold; ">function</span> <span style="color:#d2cd86; ">(</span>e<span style="color:#d2cd86; ">)</span> <span style="color:#b060b0; ">{</span>
+<span style="color:#e66170; font-weight:bold; ">if</span>
+<span style="color:#d2cd86; ">(</span>e<span style="color:#d2cd86; ">.</span>which<span style="color:#d2cd86; ">===</span><span style="color:#008c00; ">1</span> <span style="color:#d2cd86; ">&amp;&amp;</span>
+video<span style="color:#d2cd86; ">.</span>getAttribute<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">src</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">===</span>
+<span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">assets/video/video.mp4</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span>
+<span style="color:#e66170; font-weight:bold; ">return</span> <span style="color:#d2cd86; ">(</span>
+video<span style="color:#d2cd86; ">.</span>pause <span style="color:#d2cd86; ">+</span>
+playButton<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>remove
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-controls-panel-pause-button</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">+</span>
+playButton<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>add
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-controls-panel-play-button</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">+</span>
+videoPlaySymbol<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>remove
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-play-symbol-fade</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">+</span>
+videoPlaySymbol<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>add
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-play-symbol</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">+</span>
+video<span style="color:#d2cd86; ">.</span>removeAttribute
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">src</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">,</span> <span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">assets/video/video.mp4</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">+</span>
+video<span style="color:#d2cd86; ">.</span>removeAttribute
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">poster</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">,</span> <span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">assets/video/poster.jpg</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">+</span>
+video<span style="color:#d2cd86; ">.</span>setAttribute
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">src</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">,</span> <span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">assets/video/video4.mp4</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">+</span>
+video<span style="color:#d2cd86; ">.</span>setAttribute
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">poster</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">,</span> <span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">assets/video/poster4.png</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span>
+      <span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+<span style="color:#e66170; font-weight:bold; ">if</span> <span style="color:#d2cd86; ">(</span>
+e<span style="color:#d2cd86; ">.</span>which <span style="color:#d2cd86; ">===</span> <span style="color:#008c00; ">1</span> <span style="color:#d2cd86; ">&amp;&amp;</span>
+video<span style="color:#d2cd86; ">.</span>getAttribute<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">src</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">===</span>
+<span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">assets/video/video4.mp4</span><span style="color:#02d045; ">"</span>
+    <span style="color:#d2cd86; ">)</span>
+      <span style="color:#e66170; font-weight:bold; ">return</span> <span style="color:#d2cd86; ">(</span>
+video<span style="color:#d2cd86; ">.</span>pause <span style="color:#d2cd86; ">+</span>
+playButton<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>remove
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-controls-panel-pause-button</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">+</span>
+playButton<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>add
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-controls-panel-play-button</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">+</span>
+videoPlaySymbol<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>remove
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-play-symbol-fade</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">+</span>
+videoPlaySymbol<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>add
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-play-symbol</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">+</span>
+video<span style="color:#d2cd86; ">.</span>removeAttribute
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">src</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">,</span> <span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">assets/video/video4.mp4</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">+</span>
+video<span style="color:#d2cd86; ">.</span>removeAttribute
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">poster</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">,</span> <span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">assets/video/poster4.png</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">+</span>
+video<span style="color:#d2cd86; ">.</span>setAttribute
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">src</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">,</span> <span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">assets/video/video2.mp4</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">+</span>
+video<span style="color:#d2cd86; ">.</span>setAttribute
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">poster</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">,</span> <span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">assets/video/poster2.jpg</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span>
+      <span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+    <span style="color:#e66170; font-weight:bold; ">else</span> <span style="color:#e66170; font-weight:bold; ">if</span> <span style="color:#d2cd86; ">(</span>
+e<span style="color:#d2cd86; ">.</span>which <span style="color:#d2cd86; ">===</span> <span style="color:#008c00; ">1</span> <span style="color:#d2cd86; ">&amp;&amp;</span>
+video<span style="color:#d2cd86; ">.</span>getAttribute<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">src</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">===</span>
+<span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">assets/video/video2.mp4</span><span style="color:#02d045; ">"</span>
+    <span style="color:#d2cd86; ">)</span>
+      <span style="color:#e66170; font-weight:bold; ">return</span> <span style="color:#d2cd86; ">(</span>
+video<span style="color:#d2cd86; ">.</span>pause <span style="color:#d2cd86; ">+</span>
+playButton<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>remove
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-controls-panel-pause-button</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">+</span>
+playButton<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>add
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-controls-panel-play-button</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">+</span>
+videoPlaySymbol<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>remove
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-play-symbol-fade</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span> <span style="color:#d2cd86; ">+</span>
+videoPlaySymbol<span style="color:#d2cd86; ">.</span>classList<span style="color:#d2cd86; ">.</span>add
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Video-play-symbol</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">+</span>
+video<span style="color:#d2cd86; ">.</span>removeAttribute
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">src</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">,</span> <span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">assets/video/video2.mp4</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">+</span>
+video<span style="color:#d2cd86; ">.</span>removeAttribute
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">poster</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">,</span> <span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">assets/video/poster2.jpg</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">+</span>
+video<span style="color:#d2cd86; ">.</span>setAttribute
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">src</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">,</span> <span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">assets/video/video.mp4</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">+</span>
+video<span style="color:#d2cd86; ">.</span>setAttribute
+<span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">poster</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">,</span> <span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">assets/video/poster.jpg</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span>
+      <span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span> 
+           </pre>
+              </details>
             </li>
           </ul>
         </div>
-
         <!--"Soft Skills"-section-->
-        <div class="Soft-Skills-section">
-          <h3 class="Soft-Skills-title">Soft Skills</h3>
+        <div class="Soft-Skills-section" id="skills">
           <ul class="Soft-Skills-list">
+            <li class="Soft-Skills-title">
+              <h3 class="Sidebar-Title">Soft Skills</h3>
+            </li>
             <li class="Soft-Skills-content">
               <span class="Soft-Skills-item">Fluent English</span>
             </li>
@@ -214,15 +807,46 @@
           </ul>
         </div>
       </aside>
-    </div>
-<!--Footer-section-->
-      <footer class="Footer-section">
-        <strong>
-        <image src=github.png alt="GitHub-Logo" width="27.5" heigth="10">
-        <a href="https://www.github.com/Stellarator85">My GitHub</a> 2008<br>
-        <image src="https://rs.school/images/rs_school_js.svg" alt="RSS-Logo" width="75" heigth="52"> 
-          <a href="https://rs.school/js-stage0/">Course: JavaScript/Front-end. Stage 0</a>
-        </strong>
+    </main>
+    <!--Footer-section-->
+    <footer class="Footer-section">
+      <div class="RS-School-section">
+        <a href="https://rs.school/js/" target="_blank"
+          ><img
+            src="https://rs.school/images/rs_school_js.svg"
+            alt="RSS-Logo" />
+          <span class="Footer-text"></span
+        ></a>
+      </div>
+      <div class="Codewars-section">
+        <a href="https://www.codewars.com/users/Stellarator85/" target="_blank"
+          ><img
+            src="https://www.codewars.com/users/Stellarator85/badges/large/"
+            alt="Stellarator85-Codewars-Patch"
+            width="100%"
+            height="100%"
+        /></a>
+      </div>
+      <div class="Github-section">
+        <a
+          href="https://www.github.com/Stellarator85"
+          target="_blank"
+          style="text-decoration: none"
+          ><div class="Github-logo">
+            <img
+              class="Github-logo-image"
+              src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
+              alt="GitHub-Logo"
+            />&nbsp;<strong>My GitHub</strong>
+          </div></a
+        >
+      </div>
+      <a class="Back-to-Top" href="#top"
+        ><img
+          class="Back-to-Top-icon"
+          src="Back_to_Top.svg"
+          alt="Back-to-Top-icon"
+      /></a>
     </footer>
   </body>
 </html>
