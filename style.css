@@ -8,6 +8,7 @@ html {
   justify-content: center;
   align-content: center;
   min-width: 320px;
+  padding: 3vh 0 3vh 0;
 }
 
 body {
@@ -67,13 +68,13 @@ body {
   position: absolute;
   display: flex;
   flex-direction: column;
-  row-gap: 4em;
+  row-gap: 11.15vh;
   padding-top: 0%;
   padding-left: 0%;
   margin-top: 0%;
-  margin-right: 71.7%;
+  margin-right: 71.85%;
   opacity: 100%;
-  width: 27.5%;
+  width: 25.65vw;
   height: fit-content;
   background-color: #12356ab9;
   border: 0.29rem #12356ab9 solid; /*
@@ -138,7 +139,7 @@ body {
   width: 100%;
   font-style: normal;
   font-weight: bold;
-  font-size: calc(0.45rem + 37.5 * (100vw - 320px) / 1280);
+  font-size: calc(0.45rem + 34 * (100vw - 320px) / 1280);
   line-height: 100%;
   color: #ffffff;
   text-decoration: none;
@@ -200,7 +201,7 @@ nav {
 .Main-Content-Titles {
   font-style: normal;
   font-weight: bold;
-  font-size: calc(0.7rem + 27.5 * (100vw - 320px) / 1280);
+  font-size: calc(0.575rem + 27.5 * (100vw - 320px) / 1280);
   line-height: 50%;
   color: #000000;
   margin-bottom: 4%;
@@ -396,113 +397,185 @@ nav {
 .Sidebar-section {
   background-color: #12356ab9;
   /*  379.75px; */
-  padding-top: 6%;
+  padding-top: 10vh;
   text-align: center;
   text-shadow: rgb(80, 84, 87);
   display: flex;
   flex-direction: column;
-  row-gap: 3.75vw;
-  width: 40%;
+  row-gap: 9vh;
+  min-width: 30vw;
 }
 
 .My-Photo {
   width: 100%;
-  height: 25%;
-}
-
-.Location-Title {
-  font-style: normal;
-  font-weight: bold;
-  font-size: calc(0.45rem + 20 * (100vw - 320px) / 1280);
-
-  color: #ffffff;
-  margin-top: 50px;
-  margin-bottom: 1px;
+  height: 50vh;
 }
 
 .Sidebar-Title {
   font-style: normal;
   font-weight: bold;
   font-size: calc(0.45rem + 20 * (100vw - 320px) / 1280);
+  color: #ffffff; /*
+  border: 2px red solid; */
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
 
+/* "Location"-section */
+
+.Location-Title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: calc(0.45rem + 20 * (100vw - 320px) / 1280);
   color: #ffffff;
-  margin-bottom: 1px;
+  margin-top: 0%;
+  margin-bottom: 0vh;
 }
 
 .Location-section {
   font-style: normal;
   font-weight: bold;
   font-size: calc(0.45rem + 12.5 * (100vw - 320px) / 1280);
-  color: #ffffff;
+  color: #ffffff; /*
+  border: 2px rgb(135, 128, 128) solid; */
 }
 
+.Location-section-list {
+  margin-top: 0px;
+  height: 100%;
+  list-style: none;
+  padding-left: 0%;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  row-gap: 0vh;
+  /* 
+  border: solid 2px rgb(128, 0, 0); */
+}
+/*
+.Location-list-item {
+  /border: solid 2px rgb(0, 0, 0);
+}
+*/
 .Location-item {
   font-style: normal;
-  font-weight: bold;
+  font-weight: normal;
   font-size: calc(0.45rem + 12.5 * (100vw - 320px) / 1280);
-  color: #ffffff;
+  color: #ffffff; /*
+  border: solid 2px green; */
 }
 
 /* "Contacts"-section */
 
+.Contacts-section {
+  /*border: solid 2px green;*/
+  height: 12vh;
+}
+
 .Contacts-list {
   margin-top: 0px;
+  height: 100%;
   list-style: none;
-
+  padding-left: 0%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  padding-left: 0%;
+  justify-items: center;
+  row-gap: 0vh;
+
+  /* border: solid 2px rgb(128, 0, 0); */
 }
+
 .Contacts-list-item {
   color: #fb6d3a;
   list-style: none;
-}
-.Contact-Type {
+  height: fit-content; /*
+  border: solid 2px rgb(159, 159, 172); */
+  min-height: 1vh;
   font-style: normal;
   font-weight: bold;
-  font-size: calc(0.45rem + 12.5 * (100vw - 320px) / 1280);
-  line-height: 140%;
+  font-size: calc(0.275rem + 15 * (100vw - 320px) / 1280);
   color: #ffffff;
 }
-
+/*
+.Contact-Type {
+  
+  border: red 2px solid; 
+}
+*/
 .Contact-Content {
   color: #fb6d3a;
   font-style: normal;
   font-weight: normal;
-  font-size: calc(0.45rem + 12 * (100vw - 320px) / 1280);
+  font-size: calc(0.275rem + 17 * (100vw - 320px) / 1280);
   text-decoration: none;
 }
 
 /* "Tech Skills"-section */
+
+.Tech-Skills-section {
+  /* border: red solid 2px; */
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
 .Tech-Interests-list {
-  margin-top: 0.8%;
+  /*
+  margin-top: 0%;
+  margin-bottom: 0%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 15%;
-  width: 75%;
+  border-bottom: red solid 2px;
+  width: 40vh;
+  line-height: 2vh;
+  height: 100%; */
+
+  /* border: rgb(0, 255, 55) solid 2px; */
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  row-gap: 0vh;
+  padding: 0px;
+}
+
+.Tech-Skills-List-Title {
+  list-style: none;
 }
 
 .Tech-Skills-content {
   color: #fb6d3a;
+  font-size: calc(0.325rem + 15 * (100vw - 320px) / 1280);
+  /* border: rgb(0, 0, 0) solid 1px; */
 }
 
 .Tech-Skills-item {
+  /* border: rgb(0, 0, 0) solid 1px; */
   font-style: normal;
   font-weight: normal;
-  font-size: calc(0.45rem + 10 * (100vw - 320px) / 1280);
-  line-height: 180%;
+  letter-spacing: 0.05vw;
   color: #ffffff;
   margin-left: 0px;
 }
 
+.Code-item {
+  list-style: none;
+  margin-top: 1vh;
+}
 /* "JS-Code"-section */
 
 details {
   color: #fb6d3a;
-  width: 100%;
+
+  font-size: calc(0.5rem + 10 * (100vw - 320px) / 1280);
+  /* border: steelblue 2px solid; */
 }
+
 summary {
   color: #fb6d3a;
 }
@@ -512,15 +585,14 @@ summary:hover {
 }
 
 pre {
-  font-size: calc(0.45rem + 4.4 * (100vw - 320px) / 1280);
-  text-align: justify;
-  width: 100%;
+  font-size: calc(0.2rem + 13.65 * (100vw - 320px) / 1280);
+  text-align: left;
 }
 
 .Code-Example-Title {
   font-style: normal;
   font-weight: bold;
-  font-size: calc(0.45rem + 12 * (100vw - 320px) / 1280);
+  font-size: calc(0.4rem + 12 * (100vw - 320px) / 1280);
   color: #ffffff;
 
   /* border: solid 1.5px red; */
@@ -541,35 +613,46 @@ pre {
 .Soft-Skills-section {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-
-.Soft-Skills-title {
-  font-style: normal;
-  font-weight: bold;
-  font-size: calc(0.45rem + 20 * (100vw - 320px) / 1280);
-
-  color: #ffffff;
-  margin-bottom: 0px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center; /*
+  border: 2px solid red; */
 }
 
 .Soft-Skills-list {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  justify-items: center;
   align-items: center;
-  margin-top: 0.1%;
-  padding-right: 10%;
-  font-size: calc(0.45rem + 12 * (100vw - 320px) / 1280);
+  row-gap: 0vh;
+  color: #fb6d3a;
+  font-size: calc(0.35rem + 13 * (100vw - 320px) / 1280);
+  width: fit-content; /*
+  border: 2px solid red; */
+  padding: 0px;
+}
+
+.Soft-Skills-title {
+  list-style: none;
 }
 
 .Soft-Skills-content {
+  width: fit-content;
   color: #fb6d3a;
+  justify-items: center;
+  /*
+  width: fit-content;
+  padding-right: 100%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc(0.5rem + 10 * (100vw - 320px) / 1280);
+  color: #ffffff;*/
 }
 .Soft-Skills-item {
   font-style: normal;
   font-weight: normal;
-  font-size: 100%;
-  line-height: 145%;
+  letter-spacing: 0%;
   color: #ffffff;
 }
 
@@ -620,11 +703,7 @@ pre {
 }
 
 .Codewars-section {
-  width: 26%;
-  height: 100%;
-  background-image: url(https://www.codewars.com/users/Stellarator85/badges/large/);
-  background-size: 100% 200%;
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: center;
+  width: 30vw;
+  height: 100%; /*
+  border: red solid 2px; */
 }
