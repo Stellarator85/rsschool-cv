@@ -376,6 +376,10 @@ nav {
   color: #000000;
 }
 
+.My-Projects-image {
+  width: 30%;
+}
+
 .Back-to-Top {
   position: absolute;
   scroll-behavior: smooth;
@@ -707,4 +711,9 @@ pre {
   width: 30vw;
   height: 100%; /*
   border: red solid 2px; */
+}
+
+.Codewars-Patch-Image {
+  height: 100%;
+  width: 100%;
 }
