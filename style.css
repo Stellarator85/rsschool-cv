@@ -376,8 +376,45 @@ nav {
   color: #000000;
 }
 
+.My-Projects-section {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.25vh; /*
+  border: red solid 0.3px;*/
+}
+.My-Projects-section-chapter {
+  /*
+  border: red solid 0.3px; */
+  display: flex;
+  flex-direction: column;
+  row-gap: 33%;
+}
+
+.My-Projects-description {
+  display: flex;
+  flex-direction: row;
+  /* 
+  border: red solid 0.3px;*/
+}
+
+.My-Projects-description-text {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc(0.3rem + 10 * (100vw - 320px) / 1280);
+  line-height: 150%;
+  color: #595959;
+
+  line-height: 100%; /* 
+  border: red solid 0.3px; */
+  padding-left: 2%;
+  padding-right: 1%;
+}
+
 .My-Projects-image {
-  width: 30%;
+  width: 20vw;
+  height: 100%;
 }
 
 .Back-to-Top {
@@ -413,7 +450,7 @@ nav {
 
 .My-Photo {
   width: 100%;
-  height: 50vh;
+  /* height: calc(100vh - 356px); */
 }
 
 .Sidebar-Title {
@@ -590,7 +627,7 @@ summary:hover {
 }
 
 pre {
-  font-size: calc(0.2rem + 13.65 * (100vw - 320px) / 1280);
+  font-size: calc(0.2rem + 12.25 * (100vw - 320px) / 1280);
   text-align: left;
 }
 
