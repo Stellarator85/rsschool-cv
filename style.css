@@ -628,6 +628,7 @@ summary:hover {
 
 pre {
   font-size: calc(0.2rem + 12.25 * (100vw - 320px) / 1280);
+
   text-align: left;
 }
 
